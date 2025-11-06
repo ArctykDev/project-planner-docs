@@ -1,0 +1,47 @@
+site_name: Arctyk Projects
+site_url: https://arctykdev.github.io/arctyk-projects-docs
+site_author: ArctykDev
+repo_url: https://github.com/ArctykDev/arctyk-projects-docs
+repo_name: Arctyk Projects Docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: blue
+      accent: cyan
+
+nav:
+  - Home: index.md
+  - Projects:
+      - Overview: projects/overview.md
+      - Tools: projects/tools.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - footnotes
+  - def_list
+  - codehilite
+  - attr_list
+
+plugins:
+  - search
+  - minify
+  - git-revision-date-localized
