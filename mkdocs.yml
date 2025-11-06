@@ -28,8 +28,8 @@ nav:
   - Projects:
       - Overview: projects/overview.md
       - Integrations: projects/integrations.md
-      - Experiments: projects/experiments.md
-      - Tools: projects/tools.md
+      - Experiments: projects/obsidian.md
+      - Tools: projects/sharepoint.md
   - About: about.md
 
 markdown_extensions:
