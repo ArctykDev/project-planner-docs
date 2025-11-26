@@ -11,10 +11,10 @@ A project planner for **ObsidianMD** based on **Microsoft Premium Planner**. Inc
 | Feature           | Description                                   | Version |
 | ----------------- | --------------------------------------------- | ------- |
 | Grid View         | Table view of tasks and sub tasks             | v0.5.0  |
-| Board View        | Kanban view of buckets for organizing tasks   | v1.0.0  |
-| Timeline View     | Gantt style view of all tasks and subtasks    | v2.0.0  |
+| Board View        | Kanban view of buckets for organizing tasks   | v1.1.0  |
+| Timeline View     | Gantt style view of all tasks and subtasks    | v1.2.0  |
 | Task Details      | A details panel for managing all task options | v0.5.0  |
-| Multiple Projects | Support for multiple projects                 | v0.5.0  |
+| Multiple Projects | Support for multiple projects                 | v1.0.0  |
 | Dashoard          | Dashboard page with simple statistics         | v1.0.0  |
 
 ---
@@ -40,32 +40,44 @@ Project roadmap. All version goals are subject to change.
 
 ### Grid View
 
-- Add Import/Export tasks to CSV - v0.8.0
-- Feature testing - v0.1.0 - v0.5.0
-- Stable release - v0.5.0
+- Add Import/Export tasks to CSV
+- Feature testing
+- **Milestone:** v0.5.0 - Core Task Management
 
 ### Task details
 
-- Add **Complete** checkbox to top of panel - v0.6.0
-- Drag and drop checklists to task details - v0.5.0
+- Add **Complete** checkbox to top of panel
+- Drag and drop checklists to task details
+- Feature testing
+- **Milestone:** v0.5.0 - Core Task Management
 
 ### Board View
 
-- Initial design prototype - v0.7.0
-- Initial working prototype - v0.8.0
+- Board View with columns for each status
+- Drag tasks between status columns
+- Sync board changes back to Grid View
+- Visual cards with icons, dates, priority
+- Feature testing
+- **Milestone:** v1.1.0 - Board View (Kanban)
 
-### Chart/timeline View
+### Calendar View
 
-- Initial design prototype - v1.5.0
-- Initial working prototype - v1.6.0
+- Inline month/week calendar
+- Display start/due dates
+- Add tasks from calendar
+- Weekly summaries
+- Calendar and tasks fully syncronized
+- Feature testing
+- **Milestone:** v1.2.0 - Calendar View
 
-### Project
+### Multi-Project Support
 
-- Support for multiple projects - v0.5.0
-- Task assignment - TBD
-- Task notifications - TBD
-- Integration with Obsidian daily notes - TBD
-- Integration with other Obsidian calendar plugins - TBD
+- Multiple projects stored separately
+- Project switcher UI in Grid View
+- Project management UI in settings
+- Stable project IDs
+- Drag and drop and inline editing work per-project
+- **Milestone:** v1.0.0 - Multi-Project Support
 
 ---
 
