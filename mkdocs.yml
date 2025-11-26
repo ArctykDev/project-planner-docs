@@ -1,7 +1,7 @@
 site_name: Arctyk Projects
 site_description: Documentation for ArctykDev projects not part of Arctyk ITSM
 site_url: https://arctykdev.github.io/arctyk-projects-docs
-site_author: ArctykDev
+site_author: James Hawkins
 repo_url: https://github.com/ArctykDev/arctyk-projects-docs
 repo_name: Arctyk Projects Docs
 edit_uri: edit/main/docs/
@@ -30,10 +30,15 @@ nav:
       - Integrations: projects/integrations.md
       - Obsidian:
           - Overview: projects/obsidian.md
-          - Calendar Events: projects/obsidian/obsidian-calendar-events.md
+          - Obsidian Calendar Events: projects/obsidian/obsidian-calendar-events.md
+          - Obsidian Project Planner: projects/obsidian/obsidian-calendar-events.md
+          - Obsidian 5 Things: projects/obsidian/obsidian-5-things.md
       - SharePoint: projects/sharepoint.md
+      - WordPress: projects/wordpress.md
+      - Power Platform: /projects/power-platform.md
+      - Custom Apps: projects/custom-apps.md
+      - Dev Tools: projects/dev-tools.md
   - About: about.md
-
 
 markdown_extensions:
   - admonition
