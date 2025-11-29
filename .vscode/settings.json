@@ -1,0 +1,22 @@
+{
+  // Disable VS Code's default Markdown formatter
+  "markdown.format.enable": false,
+
+  // Disable format-on-save specifically for Markdown
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+
+  // Optional: allow Prettier for other languages
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Run markdownlint on save
+  "markdownlint.run": "onSave",
+
+  // Enforce your preferred horizontal rule: '---'
+  "markdownlint.config": {
+    "MD035": {
+      "style": "---"
+    }
+  }
+}

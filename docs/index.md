@@ -1,13 +1,29 @@
-# Welcome to Arctyk Projects
+# Arctyk Projects
 
-This documentation covers all projects developed by the Arctyk team, excluding **Arctyk ITSM**.
+A collection of open-source tools, plugins, and integrations built for
+productivity and customization.
 
-## Project Categories
+Arctyk Projects brings together powerful solutions for Obsidian,
+SharePoint, WordPress, Power Platform, and more — designed with clean
+architecture, elegant UI, and extensibility at their core.
 
-- Obsidan.md plugins
-- SharePoint web parts
-- Power Platform apps and automations
-- Integration (connectors for 3rd party apps)
-- Custom apps
+---
 
-For ITSM-related content, visit [Arctyk Docs](https://docs.arctyk.dev).
+# Featured Projects
+
+<div class="grid cards" markdown>
+
+- :simple-obsidian: **Obsidian** Calendar Events
+- :simple-obsidian: **Obsidian** Project Planner
+- :material-microsoft-sharepoint: **SharePoint** Blurbs wep part
+- :simple-dotnet: **SNOdesk** custom ticking system
+
+</div>
+
+---
+
+# About ArctykDev
+
+ArctykDev builds open-source tools and enterprise software for productivity, workflow integration, and modern knowledge-driven organizations. From Obsidian plugins to SharePoint and Django systems, each project focuses on quality, extensibility, and performance.
+
+[:octicons-arrow-right-24: Learn More](about.md)

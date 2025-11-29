@@ -6,29 +6,51 @@ repo_url: https://github.com/ArctykDev/arctyk-projects-docs
 repo_name: Arctyk Projects Docs
 edit_uri: edit/main/docs/
 
+copyright: Copyright © 2025 Arctyk
+
+site_dir: site # optional but recommended
+strict: true # optional but recommended
+
 theme:
   name: material
   logo: assets/arctyk-icon-logo.png
   favicon: assets/favicon.ico
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.top
     - navigation.footer
+    - navigation.indexes
+    - navigation.path
+    - navigation.sections
+    - navigation.instant.progress
+    - navigation.tabs
     - search.highlight
     - search.suggest
+    - search.share
+    - toc.follow
     - content.code.annotate
+    - content.code.copy
+    - content.tooltips
   palette:
     - scheme: default
       primary: blue
-      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 nav:
   - Home: index.md
-  - Obsidian:
+  - Obsidian Plugins:
       - Overview: obsidian/obsidian.md
       - Obsidian Calendar Events:
-          - Obsidian Calendar Events: obsidian/obsidian-calendar-events/obsidian-calendar-events.md
+          - Overview: obsidian/obsidian-calendar-events/obsidian-calendar-events.md
           - How to Install: obsidian/obsidian-calendar-events/obsidian-calendar-events-installation.md
           - Changelog: obsidian/obsidian-calendar-events/obsidian-calendar-events-changelog.md
       - Obsidian Project Planner:
@@ -36,13 +58,13 @@ nav:
       - Obsidian 5 Things:
           - Overview: obsidian/obsidian-5-things/obsidian-5-things.md
   - SharePoint:
-      - SharePoint: sharepoint/sharepoint.md
+      - Overview: sharepoint/sharepoint.md
   - Power Platform:
       - Overview: power-platform/power-platform.md
   - WordPress:
-      - WordPress: wordpress/wordpress.md
+      - Overview: wordpress/wordpress.md
   - SNOdesk:
-      - snodesk/snodesk.md
+      - Overview: snodesk/snodesk.md
   - About: about.md
 
 markdown_extensions:
@@ -51,14 +73,26 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.caret
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - footnotes
   - def_list
-  - codehilite
   - attr_list
+  - md_in_html
 
 plugins:
+  - material/blog # fixed (old “blog” is not valid)
   - search
   - minify:
       minify_html: true
