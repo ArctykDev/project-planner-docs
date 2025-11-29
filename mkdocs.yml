@@ -25,19 +25,23 @@ theme:
 
 nav:
   - Home: index.md
-  - Projects:
-      - Overview: projects/overview.md
-      - Integrations: projects/integrations.md
-      - Obsidian:
-          - Overview: projects/obsidian.md
-          - Obsidian Calendar Events: projects/obsidian/obsidian-calendar-events.md
-          - Obsidian Project Planner: projects/obsidian/obsidian-project-planner.md
-          - Obsidian 5 Things: projects/obsidian/obsidian-5-things.md
-      - SharePoint: projects/sharepoint.md
-      - WordPress: projects/wordpress.md
-      - Power Platform: projects/power-platform.md
-      - Custom Apps: projects/custom-apps.md
-      - Dev Tools: projects/dev-tools.md
+  - Obsidian:
+      - Overview: obsidian/obsidian.md
+      - Obsidian Calendar Events:
+          - Obsidian Calendar Events: obsidian/obsidian-calendar-events/obsidian-calendar-events.md
+          - Changelog: obsidian/obsidian-calendar-events/obsidian-calendar-events-changelog.md
+      - Obsidian Project Planner:
+          - Overview: obsidian/obsidian-project-planner/obsidian-project-planner.md
+      - Obsidian 5 Things:
+          - Overview: obsidian/obsidian-5-things/obsidian-5-things.md
+  - SharePoint:
+      - SharePoint: sharepoint/sharepoint.md
+  - Power Platform:
+      - Overview: power-platform/power-platform.md
+  - WordPress:
+      - WordPress: wordpress/wordpress.md
+  - SNOdesk:
+      - snodesk/snodesk.md
   - About: about.md
 
 markdown_extensions:

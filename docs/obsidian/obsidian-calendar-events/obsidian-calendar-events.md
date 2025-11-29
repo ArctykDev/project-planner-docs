@@ -4,7 +4,12 @@ A lightweight Obsidian plugin that displays events from an iCal (ICS) feed direc
 
 Designed for seamless integration with external calendar feeds such as Outlook, Google Calendar, or SharePoint calendar ICS links.
 
+## Current Version
+
+- Version 0.8.0
+
 ## Features
+
 - View upcoming events from multiple iCal (.ics) feeds inside Obsidian
 - Events automatically grouped and sorted by day
 - Pin today's events to the top of the event list
