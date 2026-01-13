@@ -1,7 +1,6 @@
-# About Arctyk Projects
+# About ArctykDev
 
-**ArctykDev** is the development branch of the **Arctyk** ecosystem — focused on experimentation, innovation, and internal tooling.
+My name is James and I develop and maintain couple plugins for **ObisidanMD**:
 
-These docs serve as a unified reference for **non-ITSM Arctyk** projects.
-
-For ITSM-related content, visit [Arctyk Docs](https://docs.arctyk.dev).
+- Obsidian Project Planner
+- Obsidian Calendar Events

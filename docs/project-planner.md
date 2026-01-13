@@ -83,4 +83,4 @@ Project roadmap. All version goals are subject to change.
 
 ## GitHub Repo
 
-**Main Repo:** [https://github.com/ArctykDev/obsidian-project-planner](obsidian-project-planner)
+**Main Repo:** [Obsidian Project Planner](https://github.com/ArctykDev/obsidian-project-planner)

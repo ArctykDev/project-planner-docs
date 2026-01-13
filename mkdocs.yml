@@ -1,12 +1,12 @@
-site_name: Arctyk Projects
-site_description: Documentation for ArctykDev projects not part of Arctyk ITSM
-site_url: https://arctykdev.github.io/arctyk-projects-docs
+site_name: Project Planner Docs
+site_description: Documentation for the Project Planner plugin for Obsidian
+site_url: https://arctykdev.github.io/project-planner-docs
 site_author: James Hawkins
-repo_url: https://github.com/ArctykDev/arctyk-projects-docs
-repo_name: Arctyk Projects Docs
+repo_url: https://github.com/ArctykDev/project-planner-docs
+repo_name: Project Planner Docs
 edit_uri: edit/main/docs/
 
-copyright: Copyright © 2025 Arctyk
+copyright: Copyright © 2025 ArctykDev | Licensed under MIT License
 
 site_dir: site # optional but recommended
 strict: true # optional but recommended
@@ -25,7 +25,6 @@ theme:
     - navigation.path
     - navigation.sections
     - navigation.instant.progress
-    - navigation.tabs
     - search.highlight
     - search.suggest
     - search.share
@@ -47,24 +46,8 @@ theme:
 
 nav:
   - Home: index.md
-  - Obsidian Plugins:
-      - Overview: obsidian/obsidian.md
-      - Obsidian Calendar Events:
-          - Overview: obsidian/obsidian-calendar-events/obsidian-calendar-events.md
-          - How to Install: obsidian/obsidian-calendar-events/obsidian-calendar-events-installation.md
-          - Changelog: obsidian/obsidian-calendar-events/obsidian-calendar-events-changelog.md
-      - Obsidian Project Planner:
-          - Overview: obsidian/obsidian-project-planner/obsidian-project-planner.md
-      - Obsidian 5 Things:
-          - Overview: obsidian/obsidian-5-things/obsidian-5-things.md
-  - SharePoint:
-      - Overview: sharepoint/sharepoint.md
-  - Power Platform:
-      - Overview: power-platform/power-platform.md
-  - WordPress:
-      - Overview: wordpress/wordpress.md
-  - SNOdesk:
-      - Overview: snodesk/snodesk.md
+  - Overview: project-planner.md
+  - Changelog: changelog.md
   - About: about.md
 
 markdown_extensions:
@@ -92,7 +75,7 @@ markdown_extensions:
   - md_in_html
 
 plugins:
-  - material/blog # fixed (old “blog” is not valid)
+  - material/blog
   - search
   - minify:
       minify_html: true
