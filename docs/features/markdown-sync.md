@@ -1,3 +1,10 @@
+---
+title: Bidirectional Markdown Sync
+date:
+  created: 2026-01-14
+readtime: 5
+---
+
 # Bidirectional Markdown Sync
 
 The Project Planner plugin supports bidirectional synchronization between its internal JSON data storage and markdown notes in your vault.

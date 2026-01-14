@@ -1,3 +1,10 @@
+---
+title: Task Details Panel
+date:
+  created: 2026-01-14
+readtime: 7
+---
+
 # Task Details Panel
 
 ## Overview

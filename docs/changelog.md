@@ -1,6 +1,78 @@
+---
+title: Changelog
+date:
+  created: 2026-01-07
+  updated: 2026-01-14
+readtime: 7
+---
+
 # Changelog
 
 All notable changes to Obsidian Project Planner will be documented in this file.
+
+## [0.6.3] - 2026-01-14
+
+### Added
+
+#### Daily Note Task Tagging
+
+- **Automatic Task Import from Daily Notes**: New feature to automatically scan any markdown note in your vault for tagged tasks and import them into projects
+  - Tag tasks with `#planner` to add to default project
+  - Tag tasks with `#planner/ProjectName` to add to specific project
+  - Real-time file watching detects new tasks as you create them
+  - Supports both direct project names with spaces (`#planner/Project Planner`) and hyphenated format (`#planner/Project-Planner`)
+- **Smart Task Parsing**: Automatically extracts metadata from task text:
+  - **Priority indicators**: `!!!` (Critical), `!!` (High), `!` (Medium), or text like `(high)`, `(low)`
+  - **Due dates**: Multiple formats supported - `📅 2026-01-20`, `due: 2026-01-20`, `@2026-01-20`
+  - **Additional tags**: Automatically matches hashtags with configured tags in settings
+  - **Completion status**: Imports `[x]` as completed, `[ ]` as not started
+- **New Settings Panel**: "Daily Note Task Tagging" section with:
+  - **Enable Daily Note Sync**: Toggle to activate/deactivate the feature
+  - **Tag Pattern**: Customizable tag pattern (default: `#planner`)
+  - **Scan Folders**: Optional folder filtering (comma-separated list)
+  - **Default Project**: Required dropdown to select which project receives untagged tasks
+  - **Scan Now**: Manual trigger button to import all tagged tasks from vault
+- **Task Metadata**: Imported tasks include:
+  - Automatic link back to source note
+  - Description showing "Imported from: [[Note Name]]"
+  - Content-based unique IDs to prevent duplicates
+  - Support for task updates (re-importing updates existing tasks)
+
+### Technical
+
+- **DailyNoteTaskScanner**: New utility class (`src/utils/DailyNoteTaskScanner.ts`) managing:
+  - File watching using Obsidian's vault events (create, modify)
+  - Regex-based task detection and parsing
+  - Project name extraction with flexible space/hyphen handling
+  - Duplicate prevention using content-based ID generation
+- **TaskStore Enhancement**: New `addTaskToProject()` method to add tasks to specific projects (not just active project)
+- **Settings Extensions**: Added four new settings properties:
+  - `enableDailyNoteSync`: boolean
+  - `dailyNoteTagPattern`: string
+  - `dailyNoteScanFolders`: string[]
+  - `dailyNoteDefaultProject`: string
+- **Console Logging**: Comprehensive debugging output with `[DailyNoteScanner]` prefix showing:
+  - Initialization details (tag pattern, folders, available projects)
+  - Task detection and import progress
+  - Error messages with context for troubleshooting
+
+### Documentation
+
+- **daily_notes_tagging.md**:
+  - Quick start instructions
+  - Basic and advanced usage examples
+  - Configuration options and settings
+  - Best practices for daily notes, meeting notes, and project journals
+  - Comprehensive troubleshooting with console output examples
+  - Debugging tips and common error solutions
+  - Complete daily note template example
+
+### Fixed
+
+- Improved project name matching to support both spaces and hyphens consistently
+- Added validation and error messages when default project is not configured
+
+---
 
 ## [0.6.2] - 2026-01-13
 

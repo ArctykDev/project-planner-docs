@@ -1,3 +1,11 @@
+---
+title: Daily Note Task Tagging
+date:
+  created: 2026-01-14
+readtime: 5
+status: new
+---
+
 # Daily Note Task Tagging
 
 The Project Planner plugin supports automatically importing tasks from daily notes (or any markdown note) into your projects by using tag patterns.

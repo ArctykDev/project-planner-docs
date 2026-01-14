@@ -1,0 +1,644 @@
+---
+title: Grid View
+date:
+  created: 2026-01-14
+readtime: 7
+---
+
+# Grid View Guide
+
+The Grid View is the primary task management interface in Project Planner, providing a powerful hierarchical table for organizing and managing your tasks.
+
+## Overview
+
+Grid View presents your tasks in a spreadsheet-like interface with support for:
+
+- **Hierarchical organization** - Create parent tasks with nested subtasks
+- **Multiple columns** - View and edit all task properties at once
+- **Inline editing** - Quick updates without opening detail panels
+- **Filtering and sorting** - Focus on what matters
+- **Drag-and-drop reordering** - Organize tasks your way
+
+## Opening Grid View
+
+**From Ribbon:**
+
+- Click the calendar-check icon in the left sidebar
+
+**From Command Palette:**
+
+- Press `Ctrl/Cmd + P`
+- Type "Open Project Planner"
+- Press Enter
+
+**From Settings:**
+
+- Set as default view in Settings → Project Planner → Default View
+
+## Interface Elements
+
+### Header Bar
+
+Located at the top of the grid view:
+
+- **Project Selector** - Dropdown to switch between projects
+- **View Buttons** - Quick access to Board, Timeline, Dashboard, and Graph views
+- **Add Task Button** - Create new top-level tasks
+- **Filter Indicators** - Shows active filters (status, priority, tags)
+
+### Column Headers
+
+Click column headers to:
+
+- **Sort** - Ascending/descending order
+- **Show/Hide** - Toggle column visibility via settings
+- **Resize** - Drag column borders (where supported)
+
+### Task Rows
+
+Each row represents a task with:
+
+- **Expand/Collapse Icon** - For tasks with children (►/▼)
+- **Checkbox** - Mark tasks as complete
+- **Editable Cells** - Click to edit values inline
+- **Action Buttons** - Delete, add child, open details
+
+## Columns
+
+### Title
+
+- **Editable**: Click to rename
+- **Hierarchy**: Indentation shows parent/child relationships
+- **Required**: Every task must have a title
+
+### Status
+
+- **Dropdown**: Select from configured statuses
+- **Default Options**: Not Started, In Progress, Blocked, Completed
+- **Customizable**: Add custom statuses in settings
+- **Color-coded**: Each status has a unique color
+
+### Priority
+
+- **Dropdown**: Select priority level
+- **Default Options**: Low, Medium, High, Critical
+- **Customizable**: Configure in settings
+- **Visual Indicator**: Color-coded badges
+
+### Bucket
+
+- **Board View Integration**: Assigns tasks to board columns
+- **Dropdown**: Select from project buckets
+- **Optional**: Can be left unassigned
+- **Independent**: Separate from status field
+
+### Start Date
+
+- **Date Picker**: Click to select start date
+- **Format**: YYYY-MM-DD
+- **Optional**: Leave blank if no start date
+- **Planning**: Helps with timeline view
+
+### Due Date
+
+- **Date Picker**: Click to select due date
+- **Format**: YYYY-MM-DD
+- **Optional**: Leave blank for ongoing tasks
+- **Visual**: Overdue tasks may be highlighted
+
+### Tags
+
+- **Multi-select**: Apply multiple tags
+- **Filterable**: Use for categorization
+- **Customizable**: Create tags in settings
+- **Color-coded**: Each tag has a color
+
+### Dependencies
+
+- **Task Links**: Reference other tasks
+- **Types**: FS (Finish-to-Start), SS, FF, SF
+- **Visual**: Shows in dependency graph
+- **Format**: Displayed as dependency type + task
+
+## Creating Tasks
+
+### New Top-Level Task
+
+1. Click the **"+ Add Task"** button in the header
+2. Enter task title
+3. Press Enter or click outside to save
+
+**Or:**
+
+- Right-click in empty area
+- Select "Add Task"
+
+### New Subtask
+
+**Method 1 - Inline:**
+
+1. Hover over parent task
+2. Click the **"Add Subtask"** icon (appears on hover)
+3. Enter subtask title
+
+**Method 2 - Drag and Drop:**
+
+1. Create a new task
+2. Drag it onto the parent task
+3. It becomes a child automatically
+
+**Method 3 - Task Details:**
+
+1. Open task detail panel
+2. Click "Make Subtask"
+3. Select parent task
+
+## Editing Tasks
+
+### Inline Editing
+
+**Quick Edit:**
+
+- Click any cell to edit its value
+- Make changes
+- Click outside or press Enter to save
+- Press Escape to cancel
+
+**Supported Fields:**
+
+- Title (text input)
+- Status (dropdown)
+- Priority (dropdown)
+- Bucket (dropdown)
+- Dates (date picker)
+- Tags (multi-select)
+
+### Detail Panel
+
+For more complex edits:
+
+1. Click task title or row
+2. Detail panel opens on the right
+3. Edit description, subtasks, links, dependencies
+4. Changes save automatically
+
+## Task Hierarchy
+
+### Creating Parent-Child Relationships
+
+**Drag and Drop:**
+
+1. Select a task
+2. Drag it onto another task
+3. Release to make it a child
+
+**Promote to Top-Level:**
+
+1. Drag child task to the left
+2. Drop when vertical line appears at left edge
+
+### Expanding and Collapsing
+
+**Collapse/Expand Single Task:**
+
+- Click the ► or ▼ icon next to task title
+
+**Collapse/Expand All:**
+
+- Use keyboard shortcut (if configured)
+- Or click each parent task individually
+
+**Visual Indicators:**
+
+- ► = Collapsed (children hidden)
+- ▼ = Expanded (children visible)
+- No icon = No children
+
+### Working with Hierarchies
+
+**Benefits:**
+
+- **Organization**: Group related tasks
+- **Planning**: Break large tasks into steps
+- **Tracking**: See progress at parent level
+- **Filtering**: Show/hide entire branches
+
+**Best Practices:**
+
+- Keep hierarchy depth reasonable (2-3 levels)
+- Use parents for phases or milestones
+- Use children for actionable work items
+- Complete children before marking parent complete
+
+## Filtering Tasks
+
+### Filter Bar
+
+Access filters via the header:
+
+- **Status Filter**: Show only specific statuses
+- **Priority Filter**: Filter by priority level
+- **Tag Filter**: Show tasks with specific tags
+- **Completed Toggle**: Show/hide completed tasks
+
+### Active Filter Indicators
+
+When filters are active:
+
+- Labels appear in header showing active filters
+- Example: "Status: In Progress" or "Tags: Frontend, Urgent"
+- Click filter label to modify or clear
+
+### Clearing Filters
+
+- Click individual filter indicator to remove
+- Or access filter menu and deselect all
+
+## Sorting Tasks
+
+### Column Sorting
+
+Click any column header to sort:
+
+- **First Click**: Sort ascending (A-Z, earliest first)
+- **Second Click**: Sort descending (Z-A, latest first)
+- **Third Click**: Remove sort
+
+**Sortable Columns:**
+
+- Title (alphabetical)
+- Status (by configured order)
+- Priority (by configured order)
+- Dates (chronological)
+- Bucket (alphabetical)
+
+### Manual Ordering
+
+**Drag and Drop:**
+
+1. Click and hold task row
+2. Drag to new position
+3. Release to drop
+4. Order is saved automatically
+
+**Hierarchy Considerations:**
+
+- Can reorder within same parent
+- Can reorder top-level tasks
+- Cannot mix levels during reorder
+
+## Task Actions
+
+### Checkbox (Complete)
+
+- Click checkbox to mark complete
+- Status automatically changes to "Completed"
+- Task may be hidden if "Show Completed" is off
+- Uncheck to mark incomplete
+
+### Delete Task
+
+**Method 1:**
+
+1. Hover over task row
+2. Click delete icon (trash can)
+3. Confirm deletion
+
+**Method 2:**
+
+1. Right-click task
+2. Select "Delete"
+3. Confirm
+
+**Deletion Behavior:**
+
+- Deleting parent task promotes children to top-level
+- No tasks are lost
+- Action cannot be undone (currently)
+
+### Duplicate Task
+
+**Via Context Menu:**
+
+1. Right-click task
+2. Select "Duplicate"
+3. New task created with same properties
+4. Children are not duplicated
+
+## Keyboard Shortcuts
+
+### Navigation
+
+- **Tab**: Move to next cell
+- **Shift + Tab**: Move to previous cell
+- **Arrow Keys**: Navigate between cells (when not editing)
+- **Enter**: Edit selected cell / Save edit
+- **Escape**: Cancel edit
+
+### Task Management
+
+- **Delete**: Delete selected task (with confirmation)
+- **Ctrl/Cmd + N**: New task (if configured)
+- **Ctrl/Cmd + Enter**: Mark task complete (if configured)
+
+### Bulk Operations
+
+- **Ctrl/Cmd + A**: Select all tasks (if configured)
+- **Shift + Click**: Select range (if configured)
+
+_Note: Some shortcuts may require configuration in settings_
+
+## Settings
+
+### Grid View Settings
+
+Access in Settings → Project Planner:
+
+**Default View:**
+
+- Set Grid as the default view on plugin load
+
+**Show Completed Tasks:**
+
+- Toggle to show/hide completed tasks globally
+
+**Open Views in New Tab:**
+
+- Controls whether grid view opens in new tab or replaces current
+
+### Column Configuration
+
+**Available Columns:**
+
+- All columns shown by default
+- Future versions may allow hiding specific columns
+
+**Custom Statuses:**
+
+- Add/edit/remove status options
+- Assign colors to each status
+- Reorder status list
+
+**Custom Priorities:**
+
+- Configure priority levels
+- Set colors for visual distinction
+- Define priority order
+
+**Tags:**
+
+- Create tag library
+- Assign colors
+- Tags are shared across all projects
+
+## Integration with Other Views
+
+### Board View
+
+- **Bucket Column**: Determines board column placement
+- **Status Independent**: Bucket ≠ Status
+- **Sync**: Changes in grid reflect in board and vice versa
+
+### Timeline (Gantt) View
+
+- **Date Driven**: Start/due dates determine timeline position
+- **Dependencies**: Show task relationships
+- **Visual Planning**: See grid tasks on calendar timeline
+
+### Dashboard
+
+- **Metrics**: Task counts aggregate from grid
+- **KPIs**: Completion rates calculated from grid data
+- **Projects**: Click project card to open in grid view
+
+### Task Detail Panel
+
+- **Right Sidebar**: Opens when clicking task
+- **Extended Edit**: Edit description, subtasks, links
+- **Dependencies**: Visual dependency editor
+- **Links**: Attach Obsidian notes or external URLs
+
+## Markdown Sync
+
+When "Enable Markdown Sync" is active:
+
+### Auto-Creation
+
+Tasks in grid automatically create markdown files:
+
+- Location: `{ProjectName}/Tasks/{TaskTitle}.md`
+- Format: YAML frontmatter + markdown body
+- Updates: Changes sync bidirectionally
+
+### Manual Sync
+
+- Click "Sync All Tasks Now" in settings
+- All grid tasks generate/update markdown files
+- Useful for bulk operations or initial sync
+
+### Sync Behavior
+
+- **Grid → Markdown**: Updates on task change
+- **Markdown → Grid**: Updates when file saved
+- **Conflict**: Last write wins
+- **New Tasks**: Can create in either location
+
+See [MARKDOWN_SYNC.md](MARKDOWN_SYNC.md) for details.
+
+## Daily Note Integration
+
+When "Enable Daily Note Sync" is active:
+
+### Tagged Tasks
+
+Tasks tagged in daily notes appear in grid:
+
+- `#planner` → Default project
+- `#planner/ProjectName` → Specific project
+- Real-time import as you type
+- Updates sync back to daily notes
+
+### Metadata Extraction
+
+Grid tasks from daily notes include:
+
+- Priority from `!!!`, `!!`, `!` indicators
+- Due dates from `📅 YYYY-MM-DD` format
+- Additional tags from hashtags
+- Source link back to daily note
+
+See [DAILY_NOTE_TAGGING.md](DAILY_NOTE_TAGGING.md) for details.
+
+## Tips and Best Practices
+
+### Organization
+
+**Use Hierarchy Wisely:**
+
+- Top-level = Projects or phases
+- Children = Deliverables or milestones
+- Grandchildren = Individual tasks
+- Avoid going deeper than 3 levels
+
+**Status Workflow:**
+
+1. Not Started → New tasks
+2. In Progress → Active work
+3. Blocked → Waiting on dependencies
+4. Completed → Finished tasks
+
+**Bucket Assignment:**
+
+- Use buckets for workflow stages
+- Different from status (can be in-progress in any bucket)
+- Helpful for board view visualization
+
+### Efficiency Tips
+
+**Keyboard First:**
+
+- Learn Tab navigation for quick edits
+- Use Enter to edit, Escape to cancel
+- Minimize mouse usage for faster input
+
+**Batch Updates:**
+
+- Sort by status to update many at once
+- Filter to focus on specific subset
+- Use detail panel for complex edits
+
+**Regular Maintenance:**
+
+- Archive completed tasks periodically
+- Review blocked tasks weekly
+- Update due dates proactively
+
+### Performance
+
+**Large Projects:**
+
+- Use filters to reduce visible tasks
+- Collapse unused task trees
+- Consider splitting into multiple projects
+
+**Sync Considerations:**
+
+- Markdown sync adds overhead
+- Disable if not using markdown files
+- Use manual sync for bulk operations
+
+## Troubleshooting
+
+### Tasks Not Appearing
+
+1. **Check Active Project**: Verify correct project selected
+2. **Check Filters**: Clear status/priority/tag filters
+3. **Show Completed**: Enable if looking for finished tasks
+4. **Refresh**: Close and reopen view
+
+### Hierarchy Issues
+
+**Children Not Showing:**
+
+- Click expand icon (►) on parent
+- Check if "Show Completed" is off and children are done
+
+**Can't Create Subtask:**
+
+- Ensure parent task is saved first
+- Try reopening grid view
+- Check for plugin errors in console
+
+### Editing Problems
+
+**Can't Edit Cell:**
+
+- Click directly on cell content
+- Wait for edit mode to activate
+- Check if task is syncing from markdown
+
+**Changes Not Saving:**
+
+- Press Enter or click outside to save
+- Check Developer Console for errors
+- Verify data.json has write permissions
+
+### Performance Issues
+
+**Grid Loading Slowly:**
+
+- Reduce number of visible tasks
+- Disable markdown sync temporarily
+- Check for very large task hierarchies
+
+**Lag When Editing:**
+
+- Close task detail panel if open
+- Reduce number of tags/filters
+- Consider splitting project
+
+## Advanced Features
+
+### URI Linking
+
+Open specific tasks via URI:
+
+```
+obsidian://open-planner-task?id=task-id&project=project-id
+```
+
+Use for:
+
+- External integrations
+- Quick navigation from other notes
+- Bookmark frequently accessed tasks
+
+### Console Debugging
+
+Enable Developer Console (Ctrl+Shift+I):
+
+- Look for `[Project Planner]` messages
+- Check for errors during task operations
+- Verify sync operations with `[TaskSync]` logs
+
+### Data Structure
+
+Tasks stored in `.obsidian/plugins/obsidian-project-planner/data.json`:
+
+- `tasksByProject`: Organized by project ID
+- Hierarchical via `parentId` field
+- Backup this file regularly
+
+## Frequently Asked Questions
+
+**Q: Can I reorder columns?**
+A: Not currently - column order is fixed.
+
+**Q: How do I export grid data?**
+A: Use markdown sync to create individual task files, or access data.json directly.
+
+**Q: Can I have multiple parents for one task?**
+A: No - each task has 0 or 1 parent only.
+
+**Q: What happens to children when I delete a parent?**
+A: Children are promoted to top-level tasks (not deleted).
+
+**Q: Can I move tasks between projects?**
+A: Not directly in UI - requires manual data.json editing.
+
+**Q: How many tasks can grid view handle?**
+A: Hundreds comfortably, thousands with performance considerations.
+
+**Q: Do subtasks count toward parent completion?**
+A: Not automatically - parent status is independent.
+
+**Q: Can I print the grid view?**
+A: Use browser print (Ctrl+P) or export to markdown first.
+
+---
+
+**Need Help?**
+
+- Check [README.md](README.md) for overview
+- See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common issues
+- Report bugs on GitHub Issues

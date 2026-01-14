@@ -1,3 +1,10 @@
+---
+title: Board View
+date:
+  created: 2026-01-14
+readtime: 6
+---
+
 # Board View (Kanban)
 
 ## Overview

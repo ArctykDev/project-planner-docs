@@ -1,8 +1,11 @@
 ---
-title: Project Planner
+title: ProjectPlanner.md
+date:
+  created: 2026-01-07
+  updated: 2026-01-14
 ---
 
-# Project Planner
+# ProjectPlanner.md
 
 **Project Planner** is a comprehensive project management plugin for [Obsidian](https://obsidian.md) inspired by Microsoft Planner, designed to help you organize and track tasks directly within your vault.
 
@@ -30,6 +33,8 @@ Whether you're managing software development sprints, planning content calendars
 ## Integration
 
 <div class="grid cards" markdown>
+
 - :material-language-markdown: **Markdown Sync** <hr> <p>Bidirectional synchronization between Project Planner internal JSON data storage and markdown notes in your vault.</p><p>[:octicons-arrow-right-24: View](features/markdown-sync.md)</p>
 - :material-vector-link: **URI Linking** <hr> <p>Create deep links to specific tasks in your Project Planner from anywhere in Obsidian. Reference tasks from meeting notes, daily logs, or any other page in your vault.</p><p>[:octicons-arrow-right-24: View](features/uri-linking.md)</p>
+
 </div>

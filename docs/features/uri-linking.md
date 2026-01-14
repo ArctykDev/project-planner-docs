@@ -1,3 +1,10 @@
+---
+title: URI Linking
+date:
+  created: 2026-01-14
+readtime: 3
+---
+
 # URI Linking Feature
 
 ## Overview

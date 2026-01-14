@@ -1,3 +1,10 @@
+---
+title: Timeline View
+date:
+  created: 2026-01-14
+readtime: 5
+---
+
 # Timeline View (Gantt Chart)
 
 ## Overview
