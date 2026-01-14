@@ -578,13 +578,12 @@ A: Not yet - metric customization planned for v0.7.0.
 
 **Need Help?**
 
-- Check [README.md](README.md) for plugin overview
-- Read [TROUBLESHOOTING.md](troubleshooting.md) for common issues
-- Report bugs on GitHub Issues
+- Check [Home](../index.md) for plugin overview
+- Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
 **Related Documentation:**
 
 - [Grid View Guide](grid-view.md) - Detailed task management
 - [Board View Guide](board-view.md) - Kanban workflows
 - [Timeline View Guide](timeline-view.md) - Gantt charts
-- [Dependency Graph Guide](dependency-view.md) - Task relationships
+- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships

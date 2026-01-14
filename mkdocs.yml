@@ -62,6 +62,7 @@ nav:
       - Markdown Sync: features/markdown-sync.md
       - Task Tagging: features/daily-notes-tagging.md
       - URI Linking: features/uri-linking.md
+  - Troubleshooting: troubleshooting.md
   - Changelog: changelog.md
   - About: about.md
 

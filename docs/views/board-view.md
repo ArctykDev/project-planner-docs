@@ -269,7 +269,7 @@ While the board doesn't have specific keyboard shortcuts, you can:
 - Tasks sync bidirectionally with markdown notes in vault
 - Board changes update corresponding markdown files
 - Markdown edits sync back to board view
-- See MARKDOWN_SYNC.md for details
+- See [Markdown Sync](../features/markdown-sync.md) for details
 
 ## Performance
 

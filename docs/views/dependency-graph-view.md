@@ -720,9 +720,8 @@ A: Not yet - currently screenshot only. PNG/SVG export planned for v1.0.0.
 
 **Need Help?**
 
-- Check [README.md](README.md) for overview
-- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
-- Report bugs on GitHub Issues
+- Check [Home](../index.md) for plugin overview
+- Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
 **Related Documentation:**
 

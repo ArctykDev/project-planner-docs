@@ -251,7 +251,7 @@ The timeline view includes the shared global header:
 - Date changes in timeline update corresponding markdown files
 - Markdown edits to start/due dates sync back to timeline
 - Hierarchy changes (parent/child) sync bidirectionally
-- See MARKDOWN_SYNC.md for details
+- See [Markdown Sync](../features/markdown-sync.md) for details
 
 ## Keyboard Shortcuts
 
@@ -333,7 +333,7 @@ Use **Board View** for workflow status and quick bucket reassignment.
 - Ensure you release mouse button to complete drag operation
 - Check Developer Console (Ctrl+Shift+I) for errors
 - Try editing dates via Task Details panel instead
-- Verify markdown sync isn't creating conflicts (see MARKDOWN_SYNC.md)
+- Verify markdown sync isn't creating conflicts (see [Markdown Sync](../features/markdown-sync.md))
 
 **Panel split not saving?**
 
@@ -351,13 +351,12 @@ Use **Board View** for workflow status and quick bucket reassignment.
 
 **Need Help?**
 
-- Check [README.md](README.md) for overview
-- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
-- Report bugs on GitHub Issues
+- Check [Home](../index.md) for plugin overview
+- Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
 **Related Documentation:**
 
-- [Grid View Guide](task-details-view.md) - Detailed task management
-- [Board View Guide](board-view.md) - Kanban workflows
 - [Grid View Guide](grid-view.md) - Detailed task management
-- [Dependency Graph Guide](dependency-view.md) - Task relationships
+- [Board View Guide](board-view.md) - Kanban workflows
+- [Task Details View](task-details-view.md) - Individual task management
+- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships

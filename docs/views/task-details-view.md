@@ -346,7 +346,7 @@ Task Details panel opens automatically when you:
 - All changes in Task Details write to markdown files
 - Markdown edits sync back to Task Details panel
 - Description, subtasks, links preserved bidirectionally
-- See MARKDOWN_SYNC.md for details
+- See [Markdown Sync](../features/markdown-sync.md) for details
 
 ## Visual Design
 
@@ -464,18 +464,17 @@ While Task Details doesn't have specific keyboard shortcuts, you can:
 
 - Check "Enable Markdown Sync" in settings
 - Verify "Auto-Create Task Notes" is enabled
-- See MARKDOWN_SYNC.md troubleshooting section
+- See [Markdown Sync troubleshooting](../features/markdown-sync.md)
 - Check Developer Console for `[TaskSync]` messages
 
 **Need Help?**
 
-- Check [README.md](README.md) for overview
-- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
-- Report bugs on GitHub Issues
+- Check [Home](../index.md) for plugin overview
+- Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
 **Related Documentation:**
 
 - [Grid View Guide](grid-view.md) - Detailed task management
 - [Board View Guide](board-view.md) - Kanban workflows
 - [Timeline View Guide](timeline-view.md) - Gantt charts
-- [Dependency Graph Guide](dependency-view.md) - Task relationships
+- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships

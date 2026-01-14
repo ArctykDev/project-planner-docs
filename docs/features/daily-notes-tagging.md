@@ -2,8 +2,7 @@
 title: Daily Note Task Tagging
 date:
   created: 2026-01-14
-readtime: 5
-status: new
+readtime: 6
 ---
 
 # Daily Note Task Tagging
@@ -151,22 +150,58 @@ If no default project is selected, tasks without a specific project tag will not
 
 ### Manual Scanning
 
-Click **Scan Now** in settings to manually trigger a full vault scan. This is useful when:
+Use any of these methods to manually trigger a vault scan:
+
+**Settings Panel:**
+
+- Click **Scan Now** in Settings → Project Planner → Daily Note Task Tagging
+
+**Ribbon Icon:**
+
+- Click the scan icon (📡) in the left sidebar
+
+**Command Palette:**
+
+- Press `Ctrl/Cmd + P`
+- Type "Scan Daily Notes"
+- Press Enter
+
+Manual scanning is useful when:
 
 - You've just enabled the feature
 - You want to import existing tagged tasks
 - You've made bulk changes to notes
-- File watching seems to not be working
+- You need to force an immediate refresh
 
-**Note:** When you click "Scan Now", check the Developer Console to see how many tasks were found. A notification will also appear showing the count.
+**Note:** A notification will appear showing how many tasks were found and imported.
 
-## File Watching
+## Automatic Scanning
 
-Once enabled, the plugin automatically watches for:
+The plugin uses intelligent file watching for real-time updates:
 
-- **New files** - Scans newly created notes after 500ms
-- **Modified files** - Rescans notes when you save changes
-- **Real-time updates** - Tasks are imported as you work
+### How It Works
+
+- **Automatic Detection** - Watches for file changes in real-time
+- **Debounced Scanning** - Waits 1 second after the last change before scanning
+- **Efficient Processing** - Only scans modified files, not entire vault
+- **Background Operation** - Scanning happens automatically as you work
+
+### What Triggers a Scan
+
+- **Creating a new note** - Automatically scanned when saved
+- **Editing existing notes** - Rescans 1 second after you stop typing
+- **Multiple rapid changes** - Batched together to prevent excessive scanning
+
+### Refresh Frequency
+
+The debouncing system ensures:
+
+- No lag while typing
+- Changes processed quickly (1 second after you stop editing)
+- Minimal performance impact
+- No duplicate scans
+
+If you need immediate results, use the manual scan options above.
 
 ## Task Metadata
 
@@ -235,11 +270,68 @@ Keep project-specific journals with task extraction:
 
 ## Avoiding Duplicates
 
-The plugin uses a content-based ID system to prevent duplicate task imports:
+The plugin uses a **location-based tracking system** to prevent duplicate task imports:
 
-- Same task text in the same file = same ID (updates instead of duplicates)
-- Same task text in different files = different tasks (intentional)
-- Changing task text = new task (old task remains)
+### How It Works
+
+Each task is tracked by its **file path and line number**, not by its content. This means:
+
+- **Editing a task** - Updates the existing task in your planner (no duplicate created)
+- **Moving a task** - Creates a new task at the new location (intentional - different context)
+- **Copying a task** - Creates a new task (different line number = different task)
+
+### Examples
+
+**✅ No Duplicate - Editing Content:**
+
+```markdown
+<!-- Before -->
+
+- [ ] Write documentation #planner
+
+<!-- After editing (same line) -->
+
+- [ ] Write documentation for new feature #planner
+```
+
+Result: Task title updates to "Write documentation for new feature"
+
+**✅ No Duplicate - Changing Status:**
+
+```markdown
+<!-- Before -->
+
+- [ ] Review code #planner
+
+<!-- After completing -->
+
+- [x] Review code #planner
+```
+
+Result: Task marked as completed in planner
+
+**✅ New Task - Different Location:**
+
+```markdown
+<!-- Original task on line 5 -->
+
+- [ ] Buy groceries #planner
+
+<!-- Same text on line 20 -->
+
+- [ ] Buy groceries #planner
+```
+
+Result: Two separate tasks (different contexts/locations)
+
+### Task Identity
+
+- **Task ID** - Generated once per file location, persists through edits
+- **Location Key** - `filePath:lineNumber` used to track task position
+- **Updates** - Any changes to the task text update the existing task
+- **Cleanup** - If you delete a task from your note, the location tracking is removed
+
+This approach ensures you can freely edit your tasks without creating duplicates!
 
 ## Limitations
 

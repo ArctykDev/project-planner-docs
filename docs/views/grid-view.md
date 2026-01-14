@@ -443,7 +443,7 @@ Tasks in grid automatically create markdown files:
 - **Conflict**: Last write wins
 - **New Tasks**: Can create in either location
 
-See [MARKDOWN_SYNC.md](MARKDOWN_SYNC.md) for details.
+See [Markdown Sync](../features/markdown-sync.md) for details.
 
 ## Daily Note Integration
 
@@ -467,7 +467,7 @@ Grid tasks from daily notes include:
 - Additional tags from hashtags
 - Source link back to daily note
 
-See [DAILY_NOTE_TAGGING.md](DAILY_NOTE_TAGGING.md) for details.
+See [Daily Notes Tagging](../features/daily-notes-tagging.md) for details.
 
 ## Tips and Best Practices
 
@@ -639,13 +639,12 @@ A: Use browser print (Ctrl+P) or export to markdown first.
 
 **Need Help?**
 
-- Check [README.md](README.md) for overview
-- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
-- Report bugs on GitHub Issues
+- Check [Home](../index.md) for plugin overview
+- Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
 **Related Documentation:**
 
-- [Grid View Guide](task-details-view.md) - Detailed task management
+- [Task Details View](task-details-view.md) - Individual task management
 - [Board View Guide](board-view.md) - Kanban workflows
 - [Timeline View Guide](timeline-view.md) - Gantt charts
-- [Dependency Graph Guide](dependency-view.md) - Task relationships
+- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships
