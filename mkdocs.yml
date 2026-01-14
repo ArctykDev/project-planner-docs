@@ -6,10 +6,12 @@ repo_url: https://github.com/ArctykDev/project-planner-docs
 repo_name: Project Planner Docs
 edit_uri: edit/main/docs/
 
-copyright: Copyright © 2025 ArctykDev | Licensed under MIT License
+copyright: Copyright © 2026 Project Planner and its contributors.
 
 site_dir: site # optional but recommended
 strict: true # optional but recommended
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
@@ -33,20 +35,33 @@ theme:
     - content.code.copy
     - content.tooltips
   palette:
-    - scheme: default
-      primary: blue
+    - scheme: custom
+      primary: #7c3aed
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
-      primary: blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: #7c3aed
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
 nav:
   - Home: index.md
-  - Overview: project-planner.md
+  - Blog:
+      - Blog: blog/index.md
+  - Views:
+      - Dashboard View: views/dashboard-view.md
+      - Grid View: views/grid-view.md
+      - Board View: views/board-view.md
+      - Timeline View: views/timeline-view.md
+      - Dependency Graph View: views/dependency-graph-view.md
+      - Task Details View: views/task-details-view.md
+  - Features:
+      - Markdown Sync: features/markdown-sync.md
+      - Task Tagging: features/task-tagging.md
+      - URI Linking: features/uri-linking.md
   - Changelog: changelog.md
   - About: about.md
 
@@ -86,6 +101,9 @@ plugins:
       enable_creation_date: false
 
 extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated feature
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ArctykDev
