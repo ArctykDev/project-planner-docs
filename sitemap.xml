@@ -2,22 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://arctykdev.github.io/project-planner-docs/</loc>
-         <lastmod>2026-01-13</lastmod>
+         <lastmod>2026-01-14</lastmod>
     </url>
     <url>
          <loc>https://arctykdev.github.io/project-planner-docs/about/</loc>
-         <lastmod>2026-01-13</lastmod>
+         <lastmod>2026-01-14</lastmod>
     </url>
     <url>
          <loc>https://arctykdev.github.io/project-planner-docs/changelog/</loc>
-         <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-         <loc>https://arctykdev.github.io/project-planner-docs/project-planner/</loc>
-         <lastmod>2026-01-13</lastmod>
+         <lastmod>2026-01-14</lastmod>
     </url>
     <url>
          <loc>https://arctykdev.github.io/project-planner-docs/blog/</loc>
-         <lastmod>2026-01-13</lastmod>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/features/markdown-sync/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/features/task-tagging/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/features/uri-linking/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/views/board-view/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/views/dashboard-view/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/views/dependency-graph-view/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/views/grid-view/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/views/task-details-view/</loc>
+         <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+         <loc>https://arctykdev.github.io/project-planner-docs/views/timeline-view/</loc>
+         <lastmod>2026-01-14</lastmod>
     </url>
 </urlset>
