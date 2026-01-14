@@ -2,11 +2,11 @@ name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write   # required for gh-pages deploy
+  contents: write # required for gh-pages deploy
 
 jobs:
   build-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # ensures git history is available for plugins like git-revision-date-localized
+          fetch-depth: 0 # ensures git history is available for plugins like git-revision-date-localized
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,6 +39,9 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
         # --strict fails on broken links—great for catching mistakes early
+
+      - name: Add .nojekyll file
+        run: touch ./site/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
