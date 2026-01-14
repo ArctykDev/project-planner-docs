@@ -348,3 +348,16 @@ Use **Board View** for workflow status and quick bucket reassignment.
 - Collapse completed parent tasks
 - Switch to Week or Month zoom for fewer timeline cells
 - Consider archiving old completed tasks
+
+**Need Help?**
+
+- Check [README.md](README.md) for overview
+- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
+- Report bugs on GitHub Issues
+
+**Related Documentation:**
+
+- [Grid View Guide](task-details-view.md) - Detailed task management
+- [Board View Guide](board-view.md) - Kanban workflows
+- [Grid View Guide](grid-view.md) - Detailed task management
+- [Dependency Graph Guide](dependency-view.md) - Task relationships

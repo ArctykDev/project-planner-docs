@@ -640,5 +640,12 @@ A: Use browser print (Ctrl+P) or export to markdown first.
 **Need Help?**
 
 - Check [README.md](README.md) for overview
-- See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common issues
+- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
 - Report bugs on GitHub Issues
+
+**Related Documentation:**
+
+- [Grid View Guide](task-details-view.md) - Detailed task management
+- [Board View Guide](board-view.md) - Kanban workflows
+- [Timeline View Guide](timeline-view.md) - Gantt charts
+- [Dependency Graph Guide](dependency-view.md) - Task relationships

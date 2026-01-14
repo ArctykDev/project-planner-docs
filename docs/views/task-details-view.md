@@ -466,3 +466,16 @@ While Task Details doesn't have specific keyboard shortcuts, you can:
 - Verify "Auto-Create Task Notes" is enabled
 - See MARKDOWN_SYNC.md troubleshooting section
 - Check Developer Console for `[TaskSync]` messages
+
+**Need Help?**
+
+- Check [README.md](README.md) for overview
+- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
+- Report bugs on GitHub Issues
+
+**Related Documentation:**
+
+- [Grid View Guide](grid-view.md) - Detailed task management
+- [Board View Guide](board-view.md) - Kanban workflows
+- [Timeline View Guide](timeline-view.md) - Gantt charts
+- [Dependency Graph Guide](dependency-view.md) - Task relationships

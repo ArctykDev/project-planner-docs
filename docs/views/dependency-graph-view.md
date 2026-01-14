@@ -720,15 +720,13 @@ A: Not yet - currently screenshot only. PNG/SVG export planned for v1.0.0.
 
 **Need Help?**
 
-- Check [README.md](README.md) for plugin overview
-- See [GRID_VIEW.md](GRID_VIEW.md) for task management
-- Read [TIMELINE_VIEW.md](TIMELINE_VIEW.md) for Gantt charts
+- Check [README.md](README.md) for overview
+- See [TROUBLESHOOTING.md](troubleshooting.md) for common issues
 - Report bugs on GitHub Issues
 
 **Related Documentation:**
 
-- [Grid View Guide](GRID_VIEW.md) - Add/edit dependencies
-- [Timeline View Guide](TIMELINE_VIEW.md) - Date-based scheduling
-- [Board View Guide](BOARD_VIEW.md) - Kanban workflows
-- [Dashboard View Guide](DASHBOARD.md) - Project overview
-- [Task Details Guide](TASK_DETAILS.md) - Dependency management UI
+- [Grid View Guide](grid-view.md) - Detailed task management
+- [Board View Guide](board-view.md) - Kanban workflows
+- [Timeline View Guide](timeline-view.md) - Gantt charts
+- [Grid View Guide](task-details-view.md) - Detailed task management

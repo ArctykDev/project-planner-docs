@@ -579,13 +579,12 @@ A: Not yet - metric customization planned for v0.7.0.
 **Need Help?**
 
 - Check [README.md](README.md) for plugin overview
-- See [GRID_VIEW.md](GRID_VIEW.md) for task management
-- Read [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common issues
+- Read [TROUBLESHOOTING.md](troubleshooting.md) for common issues
 - Report bugs on GitHub Issues
 
 **Related Documentation:**
 
-- [Grid View Guide](GRID_VIEW.md) - Detailed task management
-- [Board View Guide](BOARD_VIEW.md) - Kanban workflows
-- [Timeline View Guide](TIMELINE_VIEW.md) - Gantt charts
-- [Dependency Graph Guide](GRAPH_FEATURES.md) - Task relationships
+- [Grid View Guide](grid-view.md) - Detailed task management
+- [Board View Guide](board-view.md) - Kanban workflows
+- [Timeline View Guide](timeline-view.md) - Gantt charts
+- [Dependency Graph Guide](dependency-view.md) - Task relationships
