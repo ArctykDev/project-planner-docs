@@ -60,7 +60,7 @@ nav:
       - Task Details View: views/task-details-view.md
   - Features:
       - Markdown Sync: features/markdown-sync.md
-      - Task Tagging: features/task-tagging.md
+      - Task Tagging: features/daily-notes-tagging.md
       - URI Linking: features/uri-linking.md
   - Changelog: changelog.md
   - About: about.md
