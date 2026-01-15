@@ -1,8 +1,5 @@
 ---
-date:
-  created: 2026-01-13
+description: Latest updates and news about Project Planner for Obsidian
 ---
 
-# Welcome to ProjectPlanner.md!
-
-I hope to bring you plenty of awesome news and updates for the Project Planner plugin in the near future.
+# Blog

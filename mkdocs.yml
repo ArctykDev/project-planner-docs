@@ -1,4 +1,4 @@
-site_name: ProjectPlanner.md
+site_name: Project Planner
 site_description: Documentation for the Project Planner plugin for Obsidian
 site_url: https://arctykdev.github.io/project-planner-docs
 site_author: James Hawkins
@@ -9,16 +9,19 @@ edit_uri: edit/main/docs/
 copyright: Copyright © 2026 Project Planner and its contributors.
 
 site_dir: site # optional but recommended
-strict: true # optional but recommended
+strict: false # optional but recommended
 extra_css:
   - stylesheets/extra.css
 
 theme:
   name: material
-  logo: assets/arctyk-icon-logo.png
+  logo: assets/projectplanner-logo.svg
+  font:
+    text: ui-sans-serif
   favicon: assets/favicon.ico
   custom_dir: overrides
   features:
+    - announce.dismiss
     - navigation.instant
     - navigation.tracking
     - navigation.top
@@ -35,14 +38,16 @@ theme:
     - content.code.copy
     - content.tooltips
   palette:
-    - scheme: custom
-      primary: #7c3aed
+    - scheme: default
+      primary: custom
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: #7c3aed
+      primary: custom
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -51,17 +56,24 @@ nav:
   - Home: index.md
   - Blog:
       - Blog: blog/index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - First steps: getting-started/first-steps.md
   - Views:
-      - Dashboard View: views/dashboard-view.md
-      - Grid View: views/grid-view.md
-      - Board View: views/board-view.md
-      - Timeline View: views/timeline-view.md
-      - Dependency Graph View: views/dependency-graph-view.md
-      - Task Details View: views/task-details-view.md
+      - Dashboard view: views/dashboard-view.md
+      - Grid view: views/grid-view.md
+      - Board view: views/board-view.md
+      - Timeline view: views/timeline-view.md
+      - Dependency Graph view: views/dependency-graph-view.md
+      - Task Details view: views/task-details-view.md
   - Features:
-      - Markdown Sync: features/markdown-sync.md
-      - Task Tagging: features/daily-notes-tagging.md
-      - URI Linking: features/uri-linking.md
+      - Markdown sync: features/markdown-sync.md
+      - Task tagging: features/daily-notes-tagging.md
+      - URI linking: features/uri-linking.md
+  - Community:
+      - Contributing: community/contributing.md
+      - Share your ideas: community/sharing-ideas.md
+      - Security: community/security.md
   - Troubleshooting: troubleshooting.md
   - Changelog: changelog.md
   - About: about.md
@@ -91,7 +103,15 @@ markdown_extensions:
   - md_in_html
 
 plugins:
-  - material/blog
+  - blog:
+      blog_dir: blog
+      authors_file: blog/posts/.authors.yml
+  - rss:
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
   - search
   - minify:
       minify_html: true
@@ -107,4 +127,4 @@ extra:
     deprecated: Deprecated feature
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ArctykDev
+      link: https://github.com/ArctykDev/obsidian-project-planner
