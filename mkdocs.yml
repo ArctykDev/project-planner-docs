@@ -106,12 +106,6 @@ plugins:
   - blog:
       blog_dir: blog
       authors_file: blog/posts/.authors.yml
-  - rss:
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
   - search
   - minify:
       minify_html: true
