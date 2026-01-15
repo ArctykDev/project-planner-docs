@@ -32,7 +32,7 @@ Our goals are to maintain well-structured, up-to-date, and accessible documentat
 
 <div class="grid cards" markdown>
 
-- :material-translate: **Translations** <hr> <p>Report a bug in Obsidian Project Planner by creating an issue.</p><hr><p>[:octicons-arrow-right-24: Add translations](views/board-view.md)</p>
-- :octicons-git-pull-request-16: **Create a pull request** <hr> <p>Check out the Obsidian Project Planner GitHub repo</p><hr><p>[:octicons-arrow-right-24: Create a pull request](views/timeline-view.md)</p>
+- :material-translate: **Translations** <hr> <p>Report a bug in Obsidian Project Planner by creating an issue.</p><hr><p>[:octicons-arrow-right-24: Add translations](../views/board-view.md)</p>
+- :octicons-git-pull-request-16: **Create a pull request** <hr> <p>Check out the Obsidian Project Planner GitHub repo</p><hr><p>[:octicons-arrow-right-24: Create a pull request](../views/timeline-view.md)</p>
 
 </div>
