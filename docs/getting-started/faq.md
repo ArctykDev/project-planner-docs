@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting
+title: FAQ
 date:
   created: 2026-01-14
 readtime: 1
 ---
 
-# Troubleshooting
+# Frequently Asked Questions
 
 This section is a work-in-progress.

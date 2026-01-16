@@ -27,7 +27,7 @@ If you discover a security vulnerability in Obsidian Project Planner, please rep
 ### How to report
 
 1. **Do not** open a public GitHub issue for security vulnerabilities
-2. [Send an email](mailto:hello@projectplanner.md) to [ArctykDev](https://github.com/ArctykDev) (a.k.a James) or use GitHub's private vulnerability reporting feature
+2. [Send an email](mailto:support@projectplanner.md) to **support@projectplanner.md** or use GitHub's private vulnerability reporting feature
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce the issue

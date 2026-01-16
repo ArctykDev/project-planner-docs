@@ -15,26 +15,23 @@ Let's get started!
 
 Get up and running with Project Planner.
 
-1. [Learn what Project Planner is](about.md)
+1. [What is Project Planner](about.md)
 2. [Download and Install Project Planner in Obsidian](getting-started/installation.md)
 3. [Take your first steps](getting-started/first-steps.md)
 
-### Project Planner Views
+## Getting help
 
-<div class="grid cards" markdown>
+Get support, ask a question or learn how to report bugs and security issues.
 
-- :material-view-dashboard: **Dashboard** <hr> <p>Analytics overview displaying KPI cards (total tasks, completion rates, blocked items, overdue tasks) with clickable metrics to filter and view specific task subsets, plus project metadata.</p><p>[:octicons-arrow-right-24: View](views/dashboard-view.md)</p>
-- :material-view-grid: **Grid view** <hr> <p>Hierarchical table displaying all tasks with columns for status, priority, dates, and dependencies, supporting parent-child relationships and drag-and-drop reordering.</p><p>[:octicons-arrow-right-24: View](views/grid-view.md)</p>
-- :material-card-multiple: **Board view** <hr> <p>Kanban-style board organizing tasks into customizable buckets (columns) with drag-and-drop functionality for visual workflow management.</p><p>[:octicons-arrow-right-24: View](views/board-view.md)</p>
-- :material-chart-gantt: **Timeline** <hr> <p>Timeline visualization showing tasks plotted across a calendar with start/due dates, providing a chronological overview of project schedules.</p><p>[:octicons-arrow-right-24: View](views/timeline-view.md)</p>
+1. [Ask a question](https://github.com/ArctykDev/obsidian-project-planner/discussions)
+2. [Share an idea](community/sharing-ideas.md)
+3. [Report an bug or issue](https://github.com/ArctykDev/obsidian-project-planner/issues)
+4. [Report a security issue](community/security.md)
 
-</div>
+## Contributing to Project Planner
 
-## Integration
+Are you interested in contributing to Project Planner? Here are some ways you can help.
 
-<div class="grid cards" markdown>
-
-- :material-language-markdown: **Markdown sync** <hr> <p>Bidirectional synchronization between Project Planner internal JSON data storage and markdown notes in your vault.</p><p>[:octicons-arrow-right-24: View](features/markdown-sync.md)</p>
-- :material-vector-link: **URI linking** <hr> <p>Create deep links to specific tasks in your Project Planner from anywhere in Obsidian. Reference tasks from meeting notes, daily logs, or any other page in your vault.</p><p>[:octicons-arrow-right-24: View](features/uri-linking.md)</p>
-
-</div>
+1. [Learn how to contribute](community/contributing.md)
+2. [Donate to the project](#)
+3. [Join Discussion Forum](https://github.com/ArctykDev/obsidian-project-planner/discussions)

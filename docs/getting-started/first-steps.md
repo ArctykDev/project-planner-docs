@@ -152,6 +152,3 @@ Now that you understand the basics, explore more advanced features:
 - **[Task Tagging](../features/daily-notes-tagging.md)**: Organize tasks with tags and integrate with Daily Notes
 - **[URI Linking](../features/uri-linking.md)**: Create deep links to specific tasks and views
 - **[Dashboard Analytics](../views/dashboard-view.md)**: Track project metrics and KPIs
-
-!!! question "Need Help?"
-If you encounter any issues or have questions, visit our [Troubleshooting guide](../troubleshooting.md) or join the discussion on [GitHub](https://github.com/ArctykDev/obsidian-project-planner/discussions).

@@ -59,6 +59,7 @@ nav:
   - Getting Started:
       - Installation: getting-started/installation.md
       - First steps: getting-started/first-steps.md
+      - FAQ: getting-started/faq.md
   - Views:
       - Dashboard view: views/dashboard-view.md
       - Grid view: views/grid-view.md
@@ -73,8 +74,7 @@ nav:
   - Community:
       - Contributing: community/contributing.md
       - Share your ideas: community/sharing-ideas.md
-      - Security: community/security.md
-  - Troubleshooting: troubleshooting.md
+      - Security policy: community/security.md
   - Changelog: changelog.md
   - About: about.md
 
@@ -105,7 +105,12 @@ markdown_extensions:
 plugins:
   - blog:
       blog_dir: blog
+      blog_toc: true
       authors_file: blog/posts/.authors.yml
+      authors_profiles: true
+      post_url_format: "{date}/{slug}"
+      post_excerpt_separator: <!-- more -->
+      archive_toc: true
   - search
   - minify:
       minify_html: true
