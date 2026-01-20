@@ -28,11 +28,12 @@ Our goals are to maintain well-structured, up-to-date, and accessible documentat
 
 </div>
 
-## Contributing
+## Support
 
-<div class="grid cards" markdown>
+Project Planner is free to use and enjoy but if you are feeling generous, you're welcome to buy me a coffee! 
 
-- :material-translate: **Translations** <hr> <p>Report a bug in Obsidian Project Planner by creating an issue.</p><hr><p>[:octicons-arrow-right-24: Add translations](../views/board-view.md)</p>
-- :octicons-git-pull-request-16: **Create a pull request** <hr> <p>Check out the Obsidian Project Planner GitHub repo</p><hr><p>[:octicons-arrow-right-24: Create a pull request](../views/timeline-view.md)</p>
+<a href="https://www.buymeacoffee.com/arctykdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-</div>
+
+
+
