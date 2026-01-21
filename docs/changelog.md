@@ -2,7 +2,7 @@
 title: Changelog
 date:
   created: 2026-01-07
-  updated: 2026-01-20
+  updated: 2026-01-
 readtime: 7
 ---
 
@@ -16,41 +16,41 @@ All notable changes to Obsidian Project Planner will be documented in this file.
 
 #### Card Preview Options
 - **Card Preview Setting**: New per-task setting in Task Details to control what displays on board cards
-  - **Hide**: Default mode - no extra content on card
-  - **Show Checklist**: Display inline checklist with interactive checkboxes directly on card
-  - **Show Description**: Display task description with full Markdown rendering on card
+    - **Hide**: Default mode - no extra content on card
+    - **Show Checklist**: Display inline checklist with interactive checkboxes directly on card
+    - **Show Description**: Display task description with full Markdown rendering on card
 - **Interactive Card Checklists**: Check/uncheck checklist items directly on board cards
-  - Real-time synchronization with Task Details panel
-  - Updates immediately without requiring page refresh
+    - Real-time synchronization with Task Details panel
+    - Updates immediately without requiring page refresh
 - **Markdown Description Rendering**: Task descriptions on cards now render with full Markdown support
-  - Headings, lists, links, code blocks, blockquotes
-  - Styled to match Task Details description rendering
-  - Scrollable container with 100px max height
+    - Headings, lists, links, code blocks, blockquotes
+    - Styled to match Task Details description rendering
+    - Scrollable container with 100px max height
 
 ### Improved
 
 #### Board View UI Enhancements (Microsoft Planner Style)
 - **"Add Task" Button Positioning**: Moved to top of bucket columns (matches MS Planner)
 - **Card Layout Improvements**:
-  - Tags now display at the very top of cards (MS Planner style)
-  - Checkbox aligned on same row as task title
-  - Improved checkbox vertical alignment with title text
-  - Cards align to top of bucket columns
+    - Tags now display at the very top of cards (MS Planner style)
+    - Checkbox aligned on same row as task title
+    - Improved checkbox vertical alignment with title text
+    - Cards align to top of bucket columns
 - **Real-time Updates**: Task Details panel now updates immediately when checklist items are changed on cards
 
 ### Fixed
 
 #### Code Quality & CSS Improvements
 - **CSS Custom Properties**: Added CSS variables for all colors for better theme consistency
-  - Priority colors: `--planner-priority-low/medium/high/critical`
-  - Status colors: `--planner-status-not-started/in-progress/blocked/completed`
-  - Accent colors: `--planner-accent-red/blue`
+    - Priority colors: `--planner-priority-low/medium/high/critical`
+    - Status colors: `--planner-status-not-started/in-progress/blocked/completed`
+    - Accent colors: `--planner-accent-red/blue`
 - **CSS Cleanup**:
-  - Removed duplicate padding declaration in `.planner-grid-wrapper`
-  - Replaced 14 hardcoded color values with CSS variables
-  - Fixed odd line break in `.planner-board-column-header`
-  - Removed 3 unnecessary `!important` declarations
-  - Removed duplicate code block at end of stylesheet
+    - Removed duplicate padding declaration in `.planner-grid-wrapper`
+    - Replaced 14 hardcoded color values with CSS variables
+    - Fixed odd line break in `.planner-board-column-header`
+    - Removed 3 unnecessary `!important` declarations
+    - Removed duplicate code block at end of stylesheet
 - **TaskDetailView Updates**: Simplified canonical task retrieval to use plugin's taskStore directly for better reliability
 
 ### Technical
@@ -70,55 +70,55 @@ All notable changes to Obsidian Project Planner will be documented in this file.
 #### Daily Note Task Tagging
 
 - **Automatic Task Import from Daily Notes**: New feature to automatically scan any markdown note in your vault for tagged tasks and import them into projects
-  - Tag tasks with `#planner` to add to default project
-  - Tag tasks with `#planner/ProjectName` to add to specific project
-  - Real-time file watching detects new tasks as you create them
-  - Supports both direct project names with spaces (`#planner/Project Planner`) and hyphenated format (`#planner/Project-Planner`)
+    - Tag tasks with `#planner` to add to default project
+    - Tag tasks with `#planner/ProjectName` to add to specific project
+    - Real-time file watching detects new tasks as you create them
+    - Supports both direct project names with spaces (`#planner/Project Planner`) and hyphenated format (`#planner/Project-Planner`)
 - **Smart Task Parsing**: Automatically extracts metadata from task text:
-  - **Priority indicators**: `!!!` (Critical), `!!` (High), `!` (Medium), or text like `(high)`, `(low)`
-  - **Due dates**: Multiple formats supported - `📅 2026-01-20`, `due: 2026-01-20`, `@2026-01-20`
-  - **Additional tags**: Automatically matches hashtags with configured tags in settings
-  - **Completion status**: Imports `[x]` as completed, `[ ]` as not started
+    - **Priority indicators**: `!!!` (Critical), `!!` (High), `!` (Medium), or text like `(high)`, `(low)`
+    - **Due dates**: Multiple formats supported - `📅 2026-01-20`, `due: 2026-01-20`, `@2026-01-20`
+    - **Additional tags**: Automatically matches hashtags with configured tags in settings
+    - **Completion status**: Imports `[x]` as completed, `[ ]` as not started
 - **New Settings Panel**: "Daily Note Task Tagging" section with:
-  - **Enable Daily Note Sync**: Toggle to activate/deactivate the feature
-  - **Tag Pattern**: Customizable tag pattern (default: `#planner`)
-  - **Scan Folders**: Optional folder filtering (comma-separated list)
-  - **Default Project**: Required dropdown to select which project receives untagged tasks
-  - **Scan Now**: Manual trigger button to import all tagged tasks from vault
+    - **Enable Daily Note Sync**: Toggle to activate/deactivate the feature
+    - **Tag Pattern**: Customizable tag pattern (default: `#planner`)
+    - **Scan Folders**: Optional folder filtering (comma-separated list)
+    - **Default Project**: Required dropdown to select which project receives untagged tasks
+    - **Scan Now**: Manual trigger button to import all tagged tasks from vault
 - **Task Metadata**: Imported tasks include:
-  - Automatic link back to source note
-  - Description showing "Imported from: [[Note Name]]"
-  - Content-based unique IDs to prevent duplicates
-  - Support for task updates (re-importing updates existing tasks)
+    - Automatic link back to source note
+    - Description showing "Imported from: [[Note Name]]"
+    - Content-based unique IDs to prevent duplicates
+    - Support for task updates (re-importing updates existing tasks)
 
 ### Technical
 
 - **DailyNoteTaskScanner**: New utility class (`src/utils/DailyNoteTaskScanner.ts`) managing:
-  - File watching using Obsidian's vault events (create, modify)
-  - Regex-based task detection and parsing
-  - Project name extraction with flexible space/hyphen handling
-  - Duplicate prevention using content-based ID generation
-- **TaskStore Enhancement**: New `addTaskToProject()` method to add tasks to specific projects (not just active project)
+    - File watching using Obsidian's vault events (create, modify)
+    - Regex-based task detection and parsing
+    - Project name extraction with flexible space/hyphen handling
+    - Duplicate prevention using content-based ID generation
+  - **TaskStore Enhancement**: New `addTaskToProject()` method to add tasks to specific projects (not just active project)
 - **Settings Extensions**: Added four new settings properties:
-  - `enableDailyNoteSync`: boolean
-  - `dailyNoteTagPattern`: string
-  - `dailyNoteScanFolders`: string[]
-  - `dailyNoteDefaultProject`: string
+    - `enableDailyNoteSync`: boolean
+    - `dailyNoteTagPattern`: string
+    - `dailyNoteScanFolders`: string[]
+    - `dailyNoteDefaultProject`: string
 - **Console Logging**: Comprehensive debugging output with `[DailyNoteScanner]` prefix showing:
-  - Initialization details (tag pattern, folders, available projects)
-  - Task detection and import progress
-  - Error messages with context for troubleshooting
+    - Initialization details (tag pattern, folders, available projects)
+    - Task detection and import progress
+    - Error messages with context for troubleshooting
 
 ### Documentation
 
 - **daily_notes_tagging.md**:
-  - Quick start instructions
-  - Basic and advanced usage examples
-  - Configuration options and settings
-  - Best practices for daily notes, meeting notes, and project journals
-  - Comprehensive troubleshooting with console output examples
-  - Debugging tips and common error solutions
-  - Complete daily note template example
+    - Quick start instructions
+    - Basic and advanced usage examples
+    - Configuration options and settings
+    - Best practices for daily notes, meeting notes, and project journals
+    - Comprehensive troubleshooting with console output examples
+    - Debugging tips and common error solutions
+    - Complete daily note template example
 
 ### Fixed
 
@@ -134,18 +134,18 @@ All notable changes to Obsidian Project Planner will be documented in this file.
 #### Bidirectional Markdown Sync
 
 - **Full Bidirectional Sync**: Complete two-way synchronization between plugin JSON data and vault markdown notes
-  - Tasks sync to individual markdown files in `{ProjectName}/Tasks/` folders
-  - YAML frontmatter contains all task metadata (status, priority, dates, dependencies, etc.)
-  - Markdown body includes description, subtasks (checkbox lists), and links
-  - Real-time automatic sync using metadata cache and vault event watchers
+    - Tasks sync to individual markdown files in `{ProjectName}/Tasks/` folders
+    - YAML frontmatter contains all task metadata (status, priority, dates, dependencies, etc.)
+    - Markdown body includes description, subtasks (checkbox lists), and links
+    - Real-time automatic sync using metadata cache and vault event watchers
 - **Markdown Content Parsing**: Full parsing of markdown files including:
-  - Description text (content before first heading)
-  - Subtasks from checkbox lists (`- [ ] item` format)
-  - Wiki links (`[[Page]]`) and external links (`[text](url)`)
+    - Description text (content before first heading)
+    - Subtasks from checkbox lists (`- [ ] item` format)
+    - Wiki links (`[[Page]]`) and external links (`[text](url)`)
 - **Sync Settings**: Three configurable options in plugin settings:
-  - `enableMarkdownSync`: Toggle sync feature on/off
-  - `autoCreateTaskNotes`: Automatically create markdown files when tasks are created in UI
-  - `syncOnStartup`: Perform initial sync of all tasks when plugin loads
+    - `enableMarkdownSync`: Toggle sync feature on/off
+    - `autoCreateTaskNotes`: Automatically create markdown files when tasks are created in UI
+    - `syncOnStartup`: Perform initial sync of all tasks when plugin loads
 - **Manual Sync Button**: "Sync All Tasks Now" button in settings for bulk synchronization
 - **Console Debugging**: Extensive logging with `[TaskSync]` prefix for troubleshooting sync operations
 
@@ -187,8 +187,8 @@ All notable changes to Obsidian Project Planner will be documented in this file.
 ### Added
 
 - **View Tab Opening Behavior**: New `openViewsInNewTab` setting to control whether views open in the same tab or create new tabs
-  - When disabled (default): Clicking view buttons replaces content in the active tab
-  - When enabled: Each view button creates a new tab
+    - When disabled (default): Clicking view buttons replaces content in the active tab
+    - When enabled: Each view button creates a new tab
 - **Bucket Selection in Task Details**: Added dropdown selector to assign tasks to buckets directly from the task details panel
 - **Bucket Column in Grid View**: New hideable "Bucket" column in grid view for quick bucket assignment and visibility
 
@@ -218,17 +218,17 @@ All notable changes to Obsidian Project Planner will be documented in this file.
 #### Settings & Configuration
 
 - **View Tab Opening Behavior**: New `openViewsInNewTab` setting to control whether views open in the same tab or create new tabs
-  - When disabled (default): Clicking view buttons replaces content in the active tab
-  - When enabled: Each view button creates a new tab
+    - When disabled (default): Clicking view buttons replaces content in the active tab
+    - When enabled: Each view button creates a new tab
 
 #### Infrastructure
 
 - **GitHub Actions Release Workflow**: Automated build and release process that:
-  - Triggers on version tags (e.g., `v0.6.0`)
-  - Builds the plugin automatically
-  - Extracts version from manifest.json
-  - Uploads `main.js`, `manifest.json`, and `styles.css` as release assets
-  - Supports BRAT plugin installation
+    - Triggers on version tags (e.g., `v0.6.0`)
+    - Builds the plugin automatically
+    - Extracts version from manifest.json
+    - Uploads `main.js`, `manifest.json`, and `styles.css` as release assets
+    - Supports BRAT plugin installation
 
 ### Fixed
 
