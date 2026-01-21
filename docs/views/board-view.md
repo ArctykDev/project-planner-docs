@@ -61,7 +61,7 @@ Each card shows:
 - Automatically created from custom statuses in settings
 - Default columns: To Do, In Progress, Done
 - Each column shows task count
-- "+ Add task" button at bottom of each column
+- "+ Add task" button at top of each column
 
 ### **Drag and Drop**
 
@@ -95,7 +95,7 @@ Each card shows:
 **Create Task:**
 
 1. Click "Add Task" in header to create with default bucket
-2. Click "+ Add task" at bottom of specific bucket
+2. Click "+ Add task" at top of specific bucket
 3. New tasks appear in active section of target bucket
 
 **Move Task:**

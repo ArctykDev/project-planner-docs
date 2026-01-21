@@ -2,13 +2,66 @@
 title: Changelog
 date:
   created: 2026-01-07
-  updated: 2026-01-14
+  updated: 2026-01-20
 readtime: 7
 ---
 
 # Changelog
 
 All notable changes to Obsidian Project Planner will be documented in this file.
+
+## [0.6.4] - 2026-01-20
+
+### Added
+
+#### Card Preview Options
+- **Card Preview Setting**: New per-task setting in Task Details to control what displays on board cards
+  - **Hide**: Default mode - no extra content on card
+  - **Show Checklist**: Display inline checklist with interactive checkboxes directly on card
+  - **Show Description**: Display task description with full Markdown rendering on card
+- **Interactive Card Checklists**: Check/uncheck checklist items directly on board cards
+  - Real-time synchronization with Task Details panel
+  - Updates immediately without requiring page refresh
+- **Markdown Description Rendering**: Task descriptions on cards now render with full Markdown support
+  - Headings, lists, links, code blocks, blockquotes
+  - Styled to match Task Details description rendering
+  - Scrollable container with 100px max height
+
+### Improved
+
+#### Board View UI Enhancements (Microsoft Planner Style)
+- **"Add Task" Button Positioning**: Moved to top of bucket columns (matches MS Planner)
+- **Card Layout Improvements**:
+  - Tags now display at the very top of cards (MS Planner style)
+  - Checkbox aligned on same row as task title
+  - Improved checkbox vertical alignment with title text
+  - Cards align to top of bucket columns
+- **Real-time Updates**: Task Details panel now updates immediately when checklist items are changed on cards
+
+### Fixed
+
+#### Code Quality & CSS Improvements
+- **CSS Custom Properties**: Added CSS variables for all colors for better theme consistency
+  - Priority colors: `--planner-priority-low/medium/high/critical`
+  - Status colors: `--planner-status-not-started/in-progress/blocked/completed`
+  - Accent colors: `--planner-accent-red/blue`
+- **CSS Cleanup**:
+  - Removed duplicate padding declaration in `.planner-grid-wrapper`
+  - Replaced 14 hardcoded color values with CSS variables
+  - Fixed odd line break in `.planner-board-column-header`
+  - Removed 3 unnecessary `!important` declarations
+  - Removed duplicate code block at end of stylesheet
+- **TaskDetailView Updates**: Simplified canonical task retrieval to use plugin's taskStore directly for better reliability
+
+### Technical
+
+- Enhanced `PlannerTask` type with `cardPreview` property (`"none" | "checklist" | "description"`)
+- Added `MarkdownRenderer` integration to BoardView for description rendering
+- Converted multiple BoardView rendering methods to async to support Markdown rendering
+- Added TaskStore subscription to TaskDetailView for real-time updates
+- Added comprehensive CSS styles for Markdown elements in card descriptions
+
+---
 
 ## [0.6.3] - 2026-01-14
 
