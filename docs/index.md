@@ -2,7 +2,7 @@
 title: ProjectPlanner.md
 date:
   created: 2026-01-07
-  updated: 2026-01-14
+  updated: 2026-01-21
 ---
 
 # Project Planner Docs
@@ -33,5 +33,11 @@ Get support, ask a question or learn how to report bugs and security issues.
 Are you interested in contributing to Project Planner? Here are some ways you can help.
 
 1. [Learn how to contribute](community/contributing.md)
-2. [Donate to the project](#)
+2. [Donate to the project](community/contributing/#support)
 3. [Join Discussion Forum](https://github.com/ArctykDev/obsidian-project-planner/discussions)
+
+## Support the work
+
+Project Planner is free to use and enjoy but if you have it in your heart to show some love, you're welcome to buy me a coffee. Donations are put right back into Project Planner. [Learn more about Donations](community/contributing.md#donations)
+
+<a href="https://www.buymeacoffee.com/arctykdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

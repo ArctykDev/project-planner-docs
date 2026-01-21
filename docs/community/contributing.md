@@ -2,7 +2,7 @@
 title: Contributing
 date:
   created: 2026-01-15
-  updated: 2026-01-15
+  updated: 2026-01-21
 ---
 
 # Contributing
@@ -28,9 +28,13 @@ Our goals are to maintain well-structured, up-to-date, and accessible documentat
 
 </div>
 
-## Support
+## Donations
 
-Project Planner is free to use and enjoy but if you are feeling generous, you're welcome to buy me a coffee! 
+Project Planner is free to use and enjoy but if you would like to help me make this plugin the best plugin ever, you're welcome to buy me a coffee! 
+
+All donations are put right back into Project Planner so I can continue to improve the plugin infrastructure and provide better support. It also goes towards the cost of [Obisdian Sync](https://obsidian.md/sync) and in the future, [Obsidian Publish](https://obsidian.md/publish). 
+
+**My current goal**: Mirgrate ProjectPlanner.md to [Obsidian Publish](https://obsidian.md/publish)
 
 <a href="https://www.buymeacoffee.com/arctykdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
