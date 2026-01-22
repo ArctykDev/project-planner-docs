@@ -11,6 +11,11 @@ Welcome to the Project Planner Docs, where you can find tips and guides on how t
 
 Let's get started!
 
+## News & Updates
+
+Stay informed on all things Project Planner and Obsidian. [Check out the blog](https://projectplanner.md/blog/).
+
+
 ## Get Started
 
 Get up and running with Project Planner.
