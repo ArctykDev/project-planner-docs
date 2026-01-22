@@ -146,12 +146,12 @@ body {
 
 /* Content font */
 .md-typeset {
-  font-size: .635rem;
+  font-size: .635rem !important;
 }
 
 /* Nav list font */
 .md-nav {
-  font-size: .635rem;  
+  font-size: .635rem !important;  
 }
 
 /* Active ToC link */
