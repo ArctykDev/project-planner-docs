@@ -35,6 +35,10 @@ When **Enable Markdown Sync** is enabled, the plugin watches for changes in your
 
 When **Sync on Startup** is enabled, the plugin scans your project folders when it loads and imports any task markdown files it finds.
 
+!!! warning
+
+    If you are using Obsidian Sync, you should disable this setting. This will help prevent tasks from being duplicated each time Obsidian starts.
+
 ## Task Markdown Format
 
 Tasks are stored as markdown files with YAML frontmatter:
