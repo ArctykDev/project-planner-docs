@@ -144,6 +144,16 @@ body {
   display: none;
 }
 
+/* Content font */
+.md-typeset {
+  font-size: .635rem;
+}
+
+/* Nav list font */
+.md-nav {
+  font-size: .635rem;  
+}
+
 /* Active ToC link */
 .md-nav--secondary .md-nav__link--active {
   color: #a68af9 !important;
