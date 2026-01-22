@@ -2,13 +2,80 @@
 title: Changelog
 date:
   created: 2026-01-07
-  updated: 2026-01-
+  updated: 2026-01-22
 readtime: 7
 ---
 
 # Changelog
 
 All notable changes to Obsidian Project Planner will be documented in this file.
+
+## [0.6.5] - 2026-01-22
+
+### Added
+
+#### Task Timestamps
+- **Created Date Field**: Tasks now track when they were created
+  - Automatically set to current date when creating new tasks
+  - Preserved when syncing from markdown files
+  - Displayed as read-only column in Grid View
+- **Last Modified Date Field**: Tasks track when they were last updated
+  - Automatically updated on any task change
+  - Preserved when syncing from markdown files
+  - Displayed as read-only column in Grid View
+- **Smart Date Defaults**: New tasks automatically set start date to today
+
+#### Grid View Columns
+- **Created Column**: Shows task creation date (hideable, read-only)
+- **Modified Column**: Shows last modification date (hideable, read-only)
+- Both columns use monospace font and muted color for easy scanning
+
+### Changed
+
+#### Date Format Improvements
+- **Simplified Date Storage**: Changed from ISO format (`2026-01-15T00:00:00.000Z`) to simple `YYYY-MM-DD` format
+  - Cleaner data files
+  - Easier to read and edit manually
+  - Maintains backward compatibility with old ISO format
+- **Sync on Startup Default**: Now defaults to `false` (was `true`)
+  - Prevents duplicate tasks when using Obsidian Sync
+  - File watching still works with this disabled
+
+### Fixed
+
+#### Plugin Startup Behavior
+- **Removed Auto-Open on Startup**: Plugin no longer automatically opens a tab when Obsidian starts
+  - Matches standard Obsidian plugin behavior
+  - Views still restore from workspace state if previously open
+  - Views only open when explicitly triggered by user (ribbon icons, commands, URI links)
+
+#### Obsidian Sync Duplicate Prevention
+- **Initial Sync Throttling**: Added 5-minute cooldown between initial syncs
+  - Prevents repeated scans when syncing across multiple devices
+  - Tracks last sync timestamp per project
+- **Increased Sync Lock Timeouts**: Extended from 200ms to 1000ms
+  - Better handles Obsidian Sync delays
+  - Reduces race conditions between devices
+- **Batched File Processing**: Initial sync now processes files with 100ms delays
+  - Prevents overwhelming the system
+  - Better handles large task folders
+- **Timestamp Preservation**: Fixed `lastModifiedDate` being overwritten during sync
+  - Markdown files now preserve their original timestamps
+  - More accurate modification tracking
+- **Sync on Startup Warning**: Added clear warning in settings
+  - "⚠️ WARNING: If using Obsidian Sync, disable this to prevent duplicate tasks across devices"
+  - Explains that file watching continues even when disabled
+- **Better Duplicate Detection**: Improved task ID matching to prevent re-imports
+
+### Technical
+
+- Added `lastSyncTimestamp` to `PlannerProject` interface for sync throttling
+- Enhanced `TaskSync` with better logging for debugging sync issues
+- Modified `addTaskFromObject` to preserve incoming timestamps
+- Added `getTodayDate()` helper function for consistent YYYY-MM-DD formatting
+- Updated `TaskDetailView` date input to handle both ISO and YYYY-MM-DD formats
+- Updated `TaskSync` YAML frontmatter to include `createdDate` and `lastModifiedDate`
+
 
 ## [0.6.4] - 2026-01-20
 
