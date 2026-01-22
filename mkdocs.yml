@@ -125,5 +125,7 @@ extra:
     new: Recently added
     deprecated: Deprecated feature
   social:
+    - icon: simple/buymeacoffee
+      link: https://www.buymeacoffee.com/ArctykDev
     - icon: fontawesome/brands/github
       link: https://github.com/ArctykDev/obsidian-project-planner
