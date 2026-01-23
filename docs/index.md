@@ -15,6 +15,10 @@ Let's get started!
 
 Stay informed on all things Project Planner and Obsidian. [Check out the blog](https://projectplanner.md/blog/).
 
+### Latest News
+
+[0.6.5 Development Release](blog/posts/0-6-5-dev.md)
+
 
 ## Get Started
 

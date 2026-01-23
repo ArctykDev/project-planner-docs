@@ -29,6 +29,12 @@ When **Enable Markdown Sync** is enabled, the plugin watches for changes in your
 - **Create** a new task note → Adds the task to the plugin (1 second delay for metadata cache)
 - **Delete** a task note → Removes the task from the plugin
 
+!!! note
+
+    The plugin uses Obisidian's Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
 **Note:** The plugin uses Obsidian's metadata cache `changed` event to detect modifications. This event fires automatically when Obsidian finishes parsing a saved file, ensuring reliable YAML frontmatter detection without manual intervention.
 
 ### Initial Sync
@@ -117,6 +123,10 @@ Automatically create/update markdown notes when tasks are modified in the plugin
 
 Scan project folders and import task markdown files when the plugin loads.
 
+!!! warning
+
+    If you are using Obsidian Sync, you should disable this setting. This will help prevent tasks from being duplicated each time Obsidian starts.
+
 ### Sync All Tasks Now
 
 Manually trigger a one-time sync of all tasks to markdown files (useful for initial setup or after bulk changes).
@@ -142,11 +152,12 @@ completed: false
 Task description goes here.
 ```
 
-**Tip:** Generate a UUID using any online UUID generator or a command like:
+!!! tip
 
-```powershell
-[guid]::NewGuid().ToString()
-```
+    Generate a UUID using any online UUID generator or a command like:
+    ```powershell
+    [guid]::NewGuid().ToString()
+    ```
 
 ## Conflict Resolution
 
@@ -181,8 +192,6 @@ Create task templates as markdown files and copy/modify them to create new tasks
 Use other Obsidian plugins (like Dataview or Templater) to query and manipulate task data.
 
 ## Limitations
-
-**Note:** Full bidirectional sync is now implemented! All task fields, including description, subtasks, and links, sync between the plugin and markdown files.
 
 **Known edge cases:**
 

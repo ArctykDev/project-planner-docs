@@ -2,8 +2,8 @@ site_name: Project Planner
 site_description: Documentation for the Project Planner plugin for Obsidian
 site_url: https://arctykdev.github.io/project-planner-docs
 site_author: James Hawkins
-repo_url: https://github.com/ArctykDev/project-planner-docs
-repo_name: Project Planner Docs
+repo_url: https://github.com/ArctykDev/obsidian-project-planner
+repo_name: Project Planner 
 edit_uri: edit/main/docs/
 
 copyright: Copyright © 2026 Project Planner and its contributors.
@@ -111,6 +111,7 @@ plugins:
       post_url_format: "{date}/{slug}"
       post_excerpt_separator: <!-- more -->
       archive_toc: true
+      pagination: true
   - search
   - minify:
       minify_html: true
