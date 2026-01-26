@@ -2,13 +2,65 @@
 title: Changelog
 date:
   created: 2026-01-07
-  updated: 2026-01-22
+  updated: 2026-01-25
 readtime: 7
 ---
 
 # Changelog
 
 All notable changes to Obsidian Project Planner will be documented in this file.
+
+## [0.6.6] - 2026-01-25
+
+### Added
+
+#### Settings
+- **Projects Base Path Setting**: New setting to control where project folders are created
+  - Defaults to "Project Planner"
+  - Allows organizing all projects under a common parent folder
+  - Configurable per vault
+
+### Fixed
+
+#### Dashboard View
+- **Completed Task Filtering**: Fixed completed tasks appearing in non-Completed cards
+  - Critical Priority card now excludes completed tasks
+  - High Priority stats now exclude completed tasks
+  - Overdue, Due Today, and Due This Week cards properly filter completed tasks
+- **All Projects Display**: Fixed "Show All Projects" toggle not displaying tasks
+  - Added `getAllForProject()` method to TaskStore
+  - Each project now correctly displays its own tasks when viewing all projects
+- **Bottom Stats Cards**: Converted static stats to clickable KPI cards
+  - High Priority, Has Dependencies, and Not Started are now clickable
+  - Each opens a modal showing the filtered tasks
+  - All exclude completed tasks (except Not Started which shows by status)
+- **Task Status Updates**: Added status badges to task modals with real-time updates
+  - Checking/unchecking tasks immediately updates status badge
+  - Strike-through toggles instantly
+  - Status badge uses same styling as Grid/Board views
+
+#### Grid View
+- **Subtask Indentation**: Fixed inconsistent indentation for subtasks
+  - Removed CSS override that was conflicting with JavaScript-calculated indentation
+  - Indentation now consistent at all nesting levels (8px base + 20px per level)
+  - Fixed indentation breaking when column width is reduced
+  - Added `white-space: nowrap` and proper vertical alignment
+
+#### Markdown Sync
+- **Auto-Create Task Notes**: Fixed task notes not being created automatically
+  - Added sync call to `updateTask()` method (was only in `addTask()`)
+  - Added error handling with console logging for sync failures
+  - Task notes now create/update in real-time for both new and modified tasks
+- **Folder Creation**: Fixed ENOENT errors when creating task notes
+  - Plugin now automatically creates parent folders if they don't exist
+  - No manual folder setup required
+- **Bidirectional Sync**: Fixed markdown changes not syncing back to plugin
+  - File watchers now use `projectsBasePath` setting
+  - Changes to task notes (priority, status, etc.) now sync back immediately
+  - `initialSync`, `watchProjectFolder`, and related methods updated
+- **Template Cleanup**: Removed duplicate newline before footer separator
+  - Cleaner markdown output
+  - Footer now appears as single instance
 
 ## [0.6.5] - 2026-01-22
 
