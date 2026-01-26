@@ -43,7 +43,7 @@ Get support, ask a question or learn how to report bugs and security issues.
 Are you interested in contributing to Project Planner? Here are some ways you can help.
 
 1. [Learn how to contribute](community/contributing.md)
-2. [Donate to the project](community/contributing/#support)
+2. [Donate to the project](community/contributing/#donations)
 3. [Join Discussion Forum](https://github.com/ArctykDev/obsidian-project-planner/discussions)
 
 ## Support the work
