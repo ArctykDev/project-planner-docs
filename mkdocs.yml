@@ -77,7 +77,7 @@ nav:
       - Share your ideas: community/sharing-ideas.md
       - Security policy: community/security.md
   - About:
-      - About: about.md
+      - About: about/about.md
       - Core values: about/core-values.md
       - Privacy policy: about/privacy-policy.md
   - Changelog: changelog.md
