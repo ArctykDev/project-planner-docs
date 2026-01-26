@@ -2,7 +2,8 @@
 title: First Steps
 date:
   created: 2026-01-15
-  updated: 2026-01-15
+  updated: 2026-01-26
+readtime: 7
 ---
 
 # First Steps

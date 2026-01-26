@@ -2,7 +2,8 @@
 title: Dependency Graph View
 date:
   created: 2026-01-14
-readtime: 7
+  updated: 2026-01-26
+readtime: 11
 ---
 
 # Dependency Graph View Guide
@@ -664,38 +665,6 @@ _Note: Enhanced keyboard navigation planned for future versions_
 - Burndown from dependency completion
 - Integration with external PM tools
 
-## Frequently Asked Questions
-
-**Q: What's the difference between FS, SS, FF, and SF?**
-A: FS = finish-to-start (most common), SS = start together, FF = finish together, SF = rare handoff scenario.
-
-**Q: Can I create a dependency to a task in another project?**
-A: Not currently - dependencies are project-scoped. Future versions may support cross-project links.
-
-**Q: How do I find the critical path?**
-A: Not yet automated. Manually trace longest dependency chain. Auto-detection coming in v0.7.0.
-
-**Q: What happens if I create a circular dependency?**
-A: Plugin should prevent this (A → B → A). If one exists, remove via Task Detail panel.
-
-**Q: Can I print the dependency graph?**
-A: Currently only via screenshot. Export/print features planned for v1.0.0.
-
-**Q: Why are some dependencies not showing?**
-A: Check dependency types are defined correctly in task data. Refresh view or check console for errors.
-
-**Q: How many tasks can the graph handle?**
-A: Tested up to 200 tasks. Performance degrades beyond that. Use filters (future) for larger projects.
-
-**Q: Can I change the graph layout?**
-A: Yes, in Settings → Project Planner → Graph Layout Algorithm. Choose hierarchical or force-directed.
-
-**Q: Do subtasks show in the graph?**
-A: Not currently - only top-level tasks. Subtask visualization planned for future release.
-
-**Q: Can I export the graph as an image?**
-A: Not yet - currently screenshot only. PNG/SVG export planned for v1.0.0.
-
 ## Best Practices Summary
 
 ### ✅ Do This:
@@ -718,8 +687,11 @@ A: Not yet - currently screenshot only. PNG/SVG export planned for v1.0.0.
 
 ---
 
+## Support
+
 **Need Help?**
 
+- Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
@@ -728,4 +700,4 @@ A: Not yet - currently screenshot only. PNG/SVG export planned for v1.0.0.
 - [Grid View Guide](grid-view.md) - Detailed task management
 - [Board View Guide](board-view.md) - Kanban workflows
 - [Timeline View Guide](timeline-view.md) - Gantt charts
-- [Grid View Guide](task-details-view.md) - Detailed task management
+- [Task Details Guide](task-details-view.md) - Detailed task management

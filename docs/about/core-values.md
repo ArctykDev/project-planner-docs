@@ -1,23 +1,12 @@
 ---
-title: About
+title: Core Values
 date:
-  created: 2026-01-15
-  updated: 2026-01-15
+  created: 2026-01-26
+  updated: 2026-01-26
+  readtime: 3
 ---
 
-# About Project Planner
-
-## What is Project Planner
-
-**Project Planner** is a comprehensive project management plugin for [Obsidian](https://obsidian.md) inspired by Microsoft Planner, designed to help you organize and track tasks directly within your vault.
-
-It offers multiple specialized views including [Grid](views/grid-view.md) (hierarchical task tables), [Board](views/board-view.md) (Kanban-style workflow), [Gantt](views/timeline-view.md) (timeline visualization), [Dashboard](views/dashboard-view.md) (analytics and KPIs), and [Dependency Graph](views/dependency-graph-view.md) (task relationships), giving you flexibility to visualize your projects in the way that works best for you.
-
-With bidirectional [markdown sync](features/markdown-sync.md), tasks can be managed both through the plugin's rich UI and as standard markdown files with YAML frontmatter, enabling seamless integration with your existing notes, version control workflows, and other Obsidian plugins like Dataview or Templater.
-
-Whether you're managing software development sprints, planning content calendars, or organizing personal projects, Project Planner brings enterprise-grade task management to your local-first knowledge base.
-
-## Philosophy
+## Core Values
 
 Project Planner is built on the foundation of Obsidian's core values: **local-first**, **privacy-focused**, and **future-proof**. We believe that your project data, like your notes, should belong to you—stored locally, accessible forever, and never locked behind proprietary formats.
 

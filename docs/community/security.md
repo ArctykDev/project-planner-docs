@@ -2,8 +2,8 @@
 title: Security Policy
 date:
   created: 2026-01-14
-  updated: 2026-01-15
-readtime: 1
+  updated: 2026-01-26
+readtime: 2
 ---
 
 # Security policy

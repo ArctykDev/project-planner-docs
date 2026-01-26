@@ -3,6 +3,7 @@ title: Installing Project Planner
 date:
   created: 2026-01-15
   updated: 2026-01-15
+readtime: 4
 ---
 
 # Installing Project Planner

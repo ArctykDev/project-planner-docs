@@ -68,6 +68,7 @@ nav:
       - Dependency Graph view: views/dependency-graph-view.md
       - Task Details view: views/task-details-view.md
   - Features:
+      - Data structure: features/data-structure.md
       - Markdown sync: features/markdown-sync.md
       - Task tagging: features/daily-notes-tagging.md
       - URI linking: features/uri-linking.md
@@ -75,8 +76,11 @@ nav:
       - Contributing: community/contributing.md
       - Share your ideas: community/sharing-ideas.md
       - Security policy: community/security.md
+  - About:
+      - About: about.md
+      - Core values: about/core-values.md
+      - Privacy policy: about/privacy-policy.md
   - Changelog: changelog.md
-  - About: about.md
 
 markdown_extensions:
   - admonition
@@ -126,6 +130,8 @@ extra:
     new: Recently added
     deprecated: Deprecated feature
   social:
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@ArctykDev
     - icon: simple/buymeacoffee
       link: https://www.buymeacoffee.com/ArctykDev
     - icon: fontawesome/brands/github

@@ -2,8 +2,8 @@
 title: Changelog
 date:
   created: 2026-01-07
-  updated: 2026-01-25
-readtime: 7
+  updated: 2026-01-26
+readtime: 9
 ---
 
 # Changelog

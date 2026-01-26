@@ -2,7 +2,8 @@
 title: Board View
 date:
   created: 2026-01-14
-readtime: 6
+  updated: 2026-01-26
+readtime: 8
 ---
 
 # Board View (Kanban)
@@ -345,3 +346,20 @@ Use **Grid View** for hierarchical task management and detailed bulk editing.
 - Large projects (500+ tasks) may render slowly
 - Use filters to reduce visible tasks
 - Consider archiving or moving completed tasks to separate project
+
+---
+
+## Support
+
+**Need Help?**
+
+- Read the [FAQ](../getting-started/faq.md)
+- Check [Home](../index.md) for plugin overview
+- Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
+
+**Related Documentation:**
+
+- [Grid View Guide](grid-view.md) - Detailed task management
+- [Dashboard View Guide](dashboard-view.md) - Analytics and KPIs
+- [Timeline View Guide](timeline-view.md) - Gantt charts
+- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships

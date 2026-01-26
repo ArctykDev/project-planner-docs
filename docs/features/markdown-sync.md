@@ -2,7 +2,8 @@
 title: Bidirectional Markdown Sync
 date:
   created: 2026-01-14
-readtime: 5
+  updated: 2026-01-26
+readtime: 4
 ---
 
 # Bidirectional Markdown Sync

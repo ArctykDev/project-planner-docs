@@ -2,7 +2,8 @@
 title: Task Details Panel
 date:
   created: 2026-01-14
-readtime: 7
+  updated: 2026-01-26
+readtime: 10
 ---
 
 # Task Details Panel
@@ -467,8 +468,13 @@ While Task Details doesn't have specific keyboard shortcuts, you can:
 - See [Markdown Sync troubleshooting](../features/markdown-sync.md)
 - Check Developer Console for `[TaskSync]` messages
 
+---
+
+## Support
+
 **Need Help?**
 
+- Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 

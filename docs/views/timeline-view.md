@@ -2,7 +2,8 @@
 title: Timeline View
 date:
   created: 2026-01-14
-readtime: 5
+  updated: 2026-01-26
+readtime: 8
 ---
 
 # Timeline View (Gantt Chart)
@@ -349,8 +350,13 @@ Use **Board View** for workflow status and quick bucket reassignment.
 - Switch to Week or Month zoom for fewer timeline cells
 - Consider archiving old completed tasks
 
+---
+
+## Support
+
 **Need Help?**
 
+- Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 

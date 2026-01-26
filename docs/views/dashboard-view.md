@@ -2,7 +2,8 @@
 title: Dashboard View
 date:
   created: 2026-01-14
-readtime: 6
+  updated: 2026-01-26
+readtime: 8
 ---
 
 # Dashboard View Guide
@@ -525,35 +526,7 @@ _Note: Enhanced keyboard navigation planned for future versions_
 
 ## Frequently Asked Questions
 
-**Q: How do I create a new project?**
-A: Go to Settings → Project Planner → Click "Add project" button.
-
-**Q: Can I reorder project cards?**
-A: Not yet - currently alphabetical. Drag-to-reorder planned for v0.8.0.
-
-**Q: How is completion rate calculated?**
-A: (Completed tasks / Total tasks) × 100 across all projects.
-
-**Q: Why isn't my project showing on Dashboard?**
-A: Check that project exists in settings and has a valid ID and name.
-
-**Q: Can I hide certain projects from Dashboard?**
-A: Not currently - all projects display. Hide/show feature planned for v0.8.0.
-
-**Q: How often do metrics update?**
-A: Automatically whenever tasks change. Manual refresh also available.
-
-**Q: Can I export Dashboard data?**
-A: Currently only via screenshot. Export features planned for v1.0.0.
-
-**Q: What's the max number of projects Dashboard can handle?**
-A: No hard limit, but 20-30 projects recommended for best UX.
-
-**Q: Do archived projects show on Dashboard?**
-A: Yes, if project exists in settings it appears. Delete to remove from Dashboard.
-
-**Q: Can I customize which metrics show?**
-A: Not yet - metric customization planned for v0.7.0.
+[Dashboard FAQ](../getting-started/faq.md)
 
 ## Best Practices Summary
 
@@ -578,6 +551,7 @@ A: Not yet - metric customization planned for v0.7.0.
 
 **Need Help?**
 
+- Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 

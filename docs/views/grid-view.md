@@ -2,8 +2,8 @@
 title: Grid View
 date:
   created: 2026-01-14
-  updated: 2026-01-15
-readtime: 7
+  updated: 2026-01-26
+readtime: 9
 ---
 
 # Grid View Guide
@@ -604,42 +604,16 @@ Enable Developer Console (Ctrl+Shift+I):
 
 ### Data Structure
 
-Tasks stored in `.obsidian/plugins/obsidian-project-planner/data.json`:
+For detailed information about how tasks and projects are stored, see the [Data Structure Reference](../features/data-structure.md).
 
-- `tasksByProject`: Organized by project ID
-- Hierarchical via `parentId` field
-- Backup this file regularly
-
-## Frequently Asked Questions
-
-**Q: Can I reorder columns?**
-A: Not currently - column order is fixed.
-
-**Q: How do I export grid data?**
-A: Use markdown sync to create individual task files, or access data.json directly.
-
-**Q: Can I have multiple parents for one task?**
-A: No - each task has 0 or 1 parent only.
-
-**Q: What happens to children when I delete a parent?**
-A: Children are promoted to top-level tasks (not deleted).
-
-**Q: Can I move tasks between projects?**
-A: Not directly in UI - requires manual data.json editing.
-
-**Q: How many tasks can grid view handle?**
-A: Hundreds comfortably, thousands with performance considerations.
-
-**Q: Do subtasks count toward parent completion?**
-A: Not automatically - parent status is independent.
-
-**Q: Can I print the grid view?**
-A: Use browser print (Ctrl+P) or export to markdown first.
 
 ---
 
+## Support 
+
 **Need Help?**
 
+- Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
 
