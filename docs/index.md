@@ -25,7 +25,7 @@ Stay informed on all things Project Planner and Obsidian. [Check out the blog](h
 
 Get up and running with Project Planner.
 
-1. [What is Project Planner](../docs/about/about.md)
+1. [What is Project Planner](../about/about.md)
 2. [Download and Install Project Planner in Obsidian](getting-started/installation.md)
 3. [Take your first steps](getting-started/first-steps.md)
 
