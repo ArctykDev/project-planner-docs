@@ -2,7 +2,7 @@
 title: Board View
 date:
   created: 2026-01-14
-  updated: 2026-01-26
+  updated: 2026-01-29
 readtime: 8
 ---
 
@@ -11,6 +11,8 @@ readtime: 8
 ## Overview
 
 The Board View provides a Microsoft Planner-style Kanban board for visualizing and managing tasks across different stages. It offers an intuitive drag-and-drop interface with cards organized in custom buckets that are independent from task status.
+
+![Board view](../assets/version-0-6-7-board-view.png)
 
 ## Features
 

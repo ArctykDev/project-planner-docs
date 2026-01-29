@@ -2,13 +2,15 @@
 title: Grid View
 date:
   created: 2026-01-14
-  updated: 2026-01-26
+  updated: 2026-01-29
 readtime: 9
 ---
 
 # Grid View Guide
 
 The Grid View is the primary task management interface in Project Planner, providing a powerful hierarchical table for organizing and managing your tasks.
+
+![Grid view](../assets/version-0-6-7-grid-view.png)
 
 ## Overview
 

@@ -10,6 +10,8 @@ readtime: 8
 
 The Dashboard View provides a high-level overview of all your projects and tasks, presenting key performance indicators (KPIs) and project summaries in an easy-to-digest visual format.
 
+![Dashboard view](../assets/version-0-6-7-dashboard-view.png)
+
 ## Overview
 
 Dashboard View serves as your command center for project monitoring:
@@ -19,37 +21,6 @@ Dashboard View serves as your command center for project monitoring:
 - **Quick Navigation** - Click project cards to jump to Grid view
 - **At-a-Glance Status** - See all projects in one view
 - **Real-Time Updates** - Metrics update as tasks change
-
-![Dashboard view](../assets/version-0-6-7-dashboard-view.png)
-
-## Opening Dashboard View
-
-**From Ribbon:**
-
-- Click the layout-dashboard icon in the left sidebar
-
-**From Command Palette:**
-
-- Press `Ctrl/Cmd + P`
-- Type "Open Dashboard"
-- Press Enter
-
-**From Settings:**
-
-- Set as default view in Settings → Project Planner → Default View
-
-**From Other Views:**
-
-- Click "Dashboard" button in header bar
-
-### Project Cards Section
-
-Main area displaying project cards:
-
-- **Card Grid** - Responsive layout adapts to window size
-- **Project Headers** - Show project name prominently
-- **Metadata Display** - Created date, last updated, task counts
-- **Click to Navigate** - Cards are clickable to open project
 
 ### Metrics Section
 
