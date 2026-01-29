@@ -17,6 +17,7 @@ Stay informed on all things Project Planner and Obsidian. [Check out the blog](h
 
 ### Latest News
 
+- 2026-01-25 - [0.6.7 Development Release](blog/posts/0-6-7-dev.md) 
 - 2026-01-25 - [0.6.6 Development Release](blog/posts/0-6-6-dev.md)
 - 2026-01-22 - [0.6.5 Development Release](blog/posts/0-6-5-dev.md)
 
