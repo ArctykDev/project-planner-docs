@@ -30,7 +30,7 @@ readtime: 1
     Check that project exists in settings and has a valid ID and name.
 
 ??? question "Can I hide certain projects from Dashboard?"
-    Not currently - all projects display. Hide/show feature planned for v0.8.0.
+    Not currently - if **Show All Projects** is checked, all projects display. Hide/show feature planned for future release.
 
 ??? question "How often do metrics update?"
     Automatically whenever tasks change. Manual refresh also available.
@@ -45,7 +45,7 @@ readtime: 1
     Yes, if project exists in settings it appears. Delete to remove from Dashboard.
 
 ??? question "Can I customize which metrics show?"
-    Not yet - metric customization planned for v0.7.0.
+    Not yet - metric customization planned for future release.
 
 ---
 
@@ -93,7 +93,7 @@ readtime: 1
     Not currently - dependencies are project-scoped. Future versions may support cross-project links.
 
 ??? question "How do I find the critical path?"
-    Not yet automated. Manually trace longest dependency chain. Auto-detection coming in v0.7.0.
+    Not yet automated. Manually trace longest dependency chain. Auto-detection coming in future release.
 
 ??? question "What happens if I create a circular dependency?"
     Plugin should prevent this (A → B → A). If one exists, remove via Task Detail panel.
@@ -108,7 +108,7 @@ readtime: 1
     Tested up to 200 tasks. Performance degrades beyond that. Use filters (future) for larger projects.
 
 ??? question "Can I change the graph layout?"
-    Yes, in Settings → Project Planner → Graph Layout Algorithm. Choose hierarchical or force-directed.
+    Not currently. Layouts planned for future release.
 
 ??? question "Do subtasks show in the graph?"
     Not currently - only top-level tasks. Subtask visualization planned for future release.
