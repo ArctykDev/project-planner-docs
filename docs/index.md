@@ -22,6 +22,17 @@ Stay informed on all things Project Planner and Obsidian. [Check out the blog](h
 - 2026-01-22 - [0.6.5 Development Release](blog/posts/0-6-5-dev.md)
 
 
+### Dashboard 
+![Dashboard view](assets/version-0-6-7-dashboard-view.png)
+
+### Grid
+
+![Grid view](assets/version-0-6-7-grid-view.png)
+
+### Board
+
+![Board view](assets/version-0-6-7-board-view.png)
+
 ## Get Started
 
 Get up and running with Project Planner.
