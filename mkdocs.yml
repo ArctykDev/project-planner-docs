@@ -105,6 +105,7 @@ markdown_extensions:
   - def_list
   - attr_list
   - md_in_html
+  - pymdownx.blocks.caption
 
 plugins:
   - blog:
@@ -124,6 +125,7 @@ plugins:
       type: date
       locale: en
       enable_creation_date: false
+  - glightbox
 
 extra:
   status:

@@ -2,7 +2,7 @@
 title: Dashboard View
 date:
   created: 2026-01-14
-  updated: 2026-01-26
+  updated: 2026-01-29
 readtime: 8
 ---
 
@@ -19,6 +19,8 @@ Dashboard View serves as your command center for project monitoring:
 - **Quick Navigation** - Click project cards to jump to Grid view
 - **At-a-Glance Status** - See all projects in one view
 - **Real-Time Updates** - Metrics update as tasks change
+
+![Dashboard view](../assets/version-0-6-7-dashboard-view.png)
 
 ## Opening Dashboard View
 
@@ -39,16 +41,6 @@ Dashboard View serves as your command center for project monitoring:
 **From Other Views:**
 
 - Click "Dashboard" button in header bar
-
-## Interface Elements
-
-### Header Bar
-
-Located at the top of the dashboard:
-
-- **View Buttons** - Quick access to Grid, Board, Timeline, and Graph views
-- **Refresh Button** - Manually refresh metrics (auto-updates on changes)
-- **Settings Link** - Quick access to plugin settings
 
 ### Project Cards Section
 
@@ -100,6 +92,8 @@ Each project card displays:
 - Badge showing task count
 
 ### Card Actions
+
+![Dashboard Task Cards](../assets/version-0-6-7-dashboard-view-task-cards.png)
 
 **Click Anywhere on Card:**
 
