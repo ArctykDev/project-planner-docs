@@ -9,21 +9,23 @@ date:
 
 Welcome to the Project Planner Docs, where you can find tips and guides on how to use and get the most out of your experience with Project Planner plugin for [Obsidian](https://obsidian.md).
 
-Let's get started!
 
 ## News & Updates
 
-Stay informed on all things Project Planner and Obsidian. [Check out the blog](https://projectplanner.md/blog/).
+News, updates, tickets & tricks.
 
 <div class="grid cards" markdown>
 
-- :material-arrow-right-circle-outline: **2026-01-29** - [0.6.7 Development Release](blog/posts/0-6-7-dev.md)
+- :rocket: **2026-01-29** - [0.6.7 Development Release](blog/posts/0-6-7-dev.md)
 - :material-arrow-right-circle-outline: **2026-01-25** - [0.6.6 Development Release](blog/posts/0-6-6-dev.md)
 - :material-arrow-right-circle-outline: **2026-01-22** - [0.6.5 Development Release](blog/posts/0-6-5-dev.md)
+- :simple-readme: **Stay Informded!** - [View Blog](https://projectplanner.md/blog/)
 
 </div>
 
 ---
+
+## Check out the Views
 
 ### Dashboard 
 ![Dashboard view](assets/version-0-6-7-dashboard-view.png)
