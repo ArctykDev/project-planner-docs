@@ -3,20 +3,29 @@ title: ProjectPlanner.md
 date:
   created: 2026-01-07
   updated: 2026-01-30
+toc: disabled
+hide: toc
 ---
 
-![Dashboard view](assets/project-planner-banner-light.png)
+<div align="center" markdown>
 
-# Welcome to ProjectPlanner.md
-
-Welcome to the ProjectPlanner.md, where you can find tips and guides on how to use and get the most out of your experience with Project Planner plugin for [Obsidian](https://obsidian.md).
+<img src="assets/project-planner-banner-light.png" alt="Project Planner Banner" style="max-width: 80%; height: auto;">
 
 
-## News & Updates
+<h1 style="font-size: 2.6em; font-weight: 700;">ProjectPlanner.md</h1>
 
-News, updates, tickets & tricks.
+<p class="md-landing-slogan md-landing-grid-card">
+Plan smarter. Visualize better. Achieve more.
+</p>
 
-<div class="grid cards" markdown>
+</div>
+
+<div align="center" markdown>
+<p class="md-landing-h2">News & Updates</p>
+<p class="md-landing-p">Get the latest news, updates, tips and tricks</p>
+</div>
+
+<div class="grid cards md-landing-grid-card" markdown>
 
 - :test_tube: **2026-01-30** - [Call for Testers!](blog/posts/call-for-testers-macos-linux.md)
 - :rocket: **2026-01-29** - [0.6.7 Development Release](blog/posts/0-6-7-dev.md)
@@ -25,69 +34,33 @@ News, updates, tickets & tricks.
 
 </div>
 
----
 
-## Check out the Views
+<div align="center" markdown>
+<p class="md-landing-h2">Built for Obsidian</p>
+<p class="md-landing-p">Powerful project management tools integrated directly into your vault</p>
+</div>
 
-### Dashboard
-The Dashboard view provides a high-level overview of all your projects and tasks, presenting key performance indicators (KPIs) and project summaries in an easy-to-digest visual format.
+<div class="grid cards md-landing-grid-card" markdown>
 
-![Dashboard view](assets/version-0-6-7-dashboard-view.png)
+- :fontawesome-brands-markdown: **Markdown-Native Task Storage**<hr> <p>All your tasks and projects live as markdown files in your vault, giving you complete ownership and portability of your data</p>
+- :material-note-plus: **Seamless Note Integration**<hr> <p>Link tasks directly to your notes, leverage Obsidian's powerful backlinks, and automatically generate task notes that sync bidirectionally.</p>
+- :material-safe-square-outline: **Vault-Centric Design**<hr> <p>Works entirely within your Obsidian vault with no external databases or cloud dependencies—your project data stays where it belongs.</p>
+- :octicons-tag-24: **Daily Notes Tagging**<hr> <p>Built-in support for Obsidian's Daily Notes workflow, allowing you to tag tasks and create time-based references automatically.</p>
 
-[:octicons-arrow-right-24: Learn more about Dashboard view](views/dashboard-view.md) 
-
-### Grid view
-
-The Grid view is the primary task management interface in Project Planner, providing a powerful hierarchical table for organizing and managing your tasks.
-
-![Grid view](assets/version-0-6-7-grid-view.png)
-
-[:octicons-arrow-right-24: Learn more about Grid view](views/grid-view.md) 
-
-### Board view
-
-The Board view provides a Kanban board for visualizing and managing tasks across different stages. It offers an intuitive drag-and-drop interface with cards organized in custom buckets that are independent from task status.
-
-![Board view](assets/version-0-6-7-board-view.png)
-
-[:octicons-arrow-right-24: Learn more about Board view](views/board-view.md) 
-
-### Timeline view
-
-The Timeline view (also known as Gantt view) provides a visual timeline representation of tasks with their start and due dates. It displays tasks chronologically across a horizontal timeline, allowing you to see task durations, overlaps, and schedule gaps at a glance.
-
-![Timeline view](assets/version-0-6-7-timeline-view.png)
-
-[:octicons-arrow-right-24: Learn more about Timeline view](views/timeline-view.md) 
+</div>
 
 
-## Get Started
 
-Get up and running with Project Planner.
+<div align="center" markdown>
+<p class="md-landing-h2">Support the Project Planner</p>
+<p class="md-landing-p">Dontations help serve the project and Obsidian community. </p>
+</div>
 
-1. [What is Project Planner](about/about.md)
-2. [Download and Install Project Planner in Obsidian](getting-started/installation.md)
-3. [Take your first steps](getting-started/first-steps.md)
 
-## Getting help
+Project Planner is free to use and enjoy but donations help support growth and improvements for the plugin. [Learn other ways you can contribute](community/contributing.md)
 
-Get support, ask a question or learn how to report bugs and security issues.
-
-1. [Ask a question](https://github.com/ArctykDev/obsidian-project-planner/discussions)
-2. [Share an idea](community/sharing-ideas.md)
-3. [Report an bug or issue](https://github.com/ArctykDev/obsidian-project-planner/issues)
-4. [Report a security issue](community/security.md)
-
-## Contributing to Project Planner
-
-Are you interested in contributing to Project Planner? Here are some ways you can help.
-
-1. [Learn how to contribute](community/contributing.md)
-2. [Donate to the project](community/contributing/#donations.)
-3. [Join Discussion Forum](https://github.com/ArctykDev/obsidian-project-planner/discussions)
-
-## Support the work
-
-Project Planner is free to use and enjoy but if you have it in your heart to show some love, you're welcome to buy me a coffee. Donations are put right back into Project Planner. [Learn more about Donations](community/contributing.md#donations)
+<div align="center" markdown>
 
 <a href="https://www.buymeacoffee.com/arctykdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+</div>

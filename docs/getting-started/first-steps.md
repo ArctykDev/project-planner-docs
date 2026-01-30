@@ -19,7 +19,7 @@ After [installing the plugin](installation.md), you can access Project Planner i
 - **View Menu**: Navigate to the view you want from the command palette
 
 !!! tip
-You can customize which ribbon icons appear in **Settings** → **Project Planner** → **Interface**.
+    You can customize which ribbon icons appear in **Settings** → **Project Planner** → **Interface**.
 
 ## Understanding the Interface
 
@@ -43,7 +43,7 @@ Each view offers unique ways to interact with your projects. You can switch betw
 5. Click **Create**
 
 !!! note
-Projects are stored as markdown files in your vault, making them fully compatible with version control and other Obsidian plugins.
+    Projects are stored as markdown files in your vault, making them fully compatible with version control and other Obsidian plugins.
 
 ## Adding Your First Tasks
 
@@ -59,39 +59,8 @@ Once you have a project created:
 4. Press **Enter** or click **Save** to create the task
 
 !!! tip
-Use keyboard shortcuts to quickly add tasks: `Ctrl/Cmd + Enter` to create a new task in most views.
+    Use keyboard shortcuts to quickly add tasks: `Ctrl/Cmd + Enter` to create a new task in most views.
 
-## Exploring Different Views
-
-### Grid View
-
-The Grid View displays tasks in a hierarchical table format, perfect for:
-
-- Breaking down large projects into subtasks
-- Viewing all task details at once
-- Quickly editing multiple tasks
-
-[Learn more about Grid View →](../views/grid-view.md)
-
-### Board View
-
-The Board View uses a Kanban-style layout, ideal for:
-
-- Visualizing workflow stages
-- Drag-and-drop task management
-- Tracking task status at a glance
-
-[Learn more about Board View →](../views/board-view.md)
-
-### Timeline View
-
-The Timeline View shows tasks on a Gantt chart, useful for:
-
-- Planning time-based projects
-- Identifying scheduling conflicts
-- Visualizing project duration
-
-[Learn more about Timeline View →](../views/timeline-view.md)
 
 ## Basic Task Management
 
@@ -131,20 +100,14 @@ One of Project Planner's most powerful features is bidirectional markdown synchr
 
 !!! example "Example Task in Markdown"
 
-```markdown
----
+````markdown
+```
 status: in-progress
 priority: high
 due: 2026-01-20
 tags: [development, urgent]
----
-
-# Implement user authentication
-
-Create a secure login system with OAuth support.
 ```
-
-[Learn more about Markdown Sync →](../features/markdown-sync.md)
+````
 
 ## Next Steps
 

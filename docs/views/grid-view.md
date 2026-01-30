@@ -66,62 +66,6 @@ Each row represents a task with:
 - **Editable Cells** - Click to edit values inline
 - **Action Buttons** - Delete, add child, open details
 
-## Columns
-
-### Title
-
-- **Editable**: Click to rename
-- **Hierarchy**: Indentation shows parent/child relationships
-- **Required**: Every task must have a title
-
-### Status
-
-- **Dropdown**: Select from configured statuses
-- **Default Options**: Not Started, In Progress, Blocked, Completed
-- **Customizable**: Add custom statuses in settings
-- **Color-coded**: Each status has a unique color
-
-### Priority
-
-- **Dropdown**: Select priority level
-- **Default Options**: Low, Medium, High, Critical
-- **Customizable**: Configure in settings
-- **Visual Indicator**: Color-coded badges
-
-### Bucket
-
-- **Board View Integration**: Assigns tasks to board columns
-- **Dropdown**: Select from project buckets
-- **Optional**: Can be left unassigned
-- **Independent**: Separate from status field
-
-### Start Date
-
-- **Date Picker**: Click to select start date
-- **Format**: YYYY-MM-DD
-- **Optional**: Leave blank if no start date
-- **Planning**: Helps with timeline view
-
-### Due Date
-
-- **Date Picker**: Click to select due date
-- **Format**: YYYY-MM-DD
-- **Optional**: Leave blank for ongoing tasks
-- **Visual**: Overdue tasks may be highlighted
-
-### Tags
-
-- **Multi-select**: Apply multiple tags
-- **Filterable**: Use for categorization
-- **Customizable**: Create tags in settings
-- **Color-coded**: Each tag has a color
-
-### Dependencies
-
-- **Task Links**: Reference other tasks
-- **Types**: FS (Finish-to-Start), SS, FF, SF
-- **Visual**: Shows in dependency graph
-- **Format**: Displayed as dependency type + task
 
 ## Creating Tasks
 
@@ -324,9 +268,10 @@ Click any column header to sort:
 **Via Context Menu:**
 
 1. Right-click task
-2. Select "Duplicate"
-3. New task created with same properties
-4. Children are not duplicated
+2. Select "Copy"
+3. Right-click where you want the new task go
+4. Select "Paste"
+5. New task created
 
 ## Keyboard Shortcuts
 
@@ -344,55 +289,8 @@ Click any column header to sort:
 - **Ctrl/Cmd + N**: New task (if configured)
 - **Ctrl/Cmd + Enter**: Mark task complete (if configured)
 
-### Bulk Operations
-
-- **Ctrl/Cmd + A**: Select all tasks (if configured)
-- **Shift + Click**: Select range (if configured)
-
 _Note: Some shortcuts may require configuration in settings_
 
-## Settings
-
-### Grid View Settings
-
-Access in Settings → Project Planner:
-
-**Default View:**
-
-- Set Grid as the default view on plugin load
-
-**Show Completed Tasks:**
-
-- Toggle to show/hide completed tasks globally
-
-**Open Views in New Tab:**
-
-- Controls whether grid view opens in new tab or replaces current
-
-### Column Configuration
-
-**Available Columns:**
-
-- All columns shown by default
-- Future versions may allow hiding specific columns
-
-**Custom Statuses:**
-
-- Add/edit/remove status options
-- Assign colors to each status
-- Reorder status list
-
-**Custom Priorities:**
-
-- Configure priority levels
-- Set colors for visual distinction
-- Define priority order
-
-**Tags:**
-
-- Create tag library
-- Assign colors
-- Tags are shared across all projects
 
 ## Integration with Other Views
 
