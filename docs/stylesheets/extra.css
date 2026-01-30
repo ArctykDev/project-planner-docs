@@ -280,8 +280,8 @@ body {
 /* Resize logo */
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 /* Reduce space between logo and site title */
