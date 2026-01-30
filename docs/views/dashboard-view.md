@@ -6,9 +6,9 @@ date:
 readtime: 8
 ---
 
-# Dashboard View Guide
+# Dashboard View
 
-The Dashboard View provides a high-level overview of all your projects and tasks, presenting key performance indicators (KPIs) and project summaries in an easy-to-digest visual format.
+The Dashboard view provides a high-level overview of all your projects and tasks, presenting key performance indicators (KPIs) and project summaries in an easy-to-digest visual format.
 
 ![Dashboard view](../assets/version-0-6-7-dashboard-view.png)
 
@@ -30,7 +30,7 @@ Each project card displays information about a specific data metric from the pro
 
 ### Card Actions
 
-Clicking on a project card will display a list of tickets for the related metric.
+Clicking on a project card will display a list of tasks for the related metric.
 
 ![Dashboard Task Cards](../assets/version-0-6-7-dashboard-view-task-cards.png)
 
@@ -38,10 +38,10 @@ Clicking on a project card will display a list of tickets for the related metric
 
 By default, the Dashboard will show the currently active project. To view all projects, check **Show All Tasks** in the Dashboard header. 
 
-![Show All Projects](../assets/version-0-6-7-show-all-projects-checkbox.png)
+![Show All Projects](../assets/show-all-projects-checkbox.png)
 
 
----
+## Support
 
 **Need Help?**
 

@@ -5,9 +5,9 @@ date:
   updated: 2026-01-29
 ---
 
-# Project Planner Docs
+# Project Planner
 
-Welcome to the Project Planner Docs, where you can find tips and guides on how to use and get the most out of your experience with Project Planner plugin for [Obsidian](https://obsidian.md).
+Welcome to the ProjectPlanner.md, where you can find tips and guides on how to use and get the most out of your experience with Project Planner plugin for [Obsidian](https://obsidian.md).
 
 
 ## News & Updates
@@ -27,18 +27,37 @@ News, updates, tickets & tricks.
 
 ## Check out the Views
 
-### Dashboard 
+### Dashboard
+The Dashboard view provides a high-level overview of all your projects and tasks, presenting key performance indicators (KPIs) and project summaries in an easy-to-digest visual format.
+
 ![Dashboard view](assets/version-0-6-7-dashboard-view.png)
 
-### Grid
+[:octicons-arrow-right-24: Learn more about Dashboard view](views/dashboard-view.md) 
+
+### Grid view
+
+The Grid view is the primary task management interface in Project Planner, providing a powerful hierarchical table for organizing and managing your tasks.
 
 ![Grid view](assets/version-0-6-7-grid-view.png)
 
-### Board
+[:octicons-arrow-right-24: Learn more about Grid view](views/grid-view.md) 
+
+### Board view
+
+The Board view provides a Kanban board for visualizing and managing tasks across different stages. It offers an intuitive drag-and-drop interface with cards organized in custom buckets that are independent from task status.
 
 ![Board view](assets/version-0-6-7-board-view.png)
 
----
+[:octicons-arrow-right-24: Learn more about Board view](views/board-view.md) 
+
+### Timeline view
+
+The Timeline view (also known as Gantt view) provides a visual timeline representation of tasks with their start and due dates. It displays tasks chronologically across a horizontal timeline, allowing you to see task durations, overlaps, and schedule gaps at a glance.
+
+![Timeline view](assets/version-0-6-7-timeline-view.png)
+
+[:octicons-arrow-right-24: Learn more about Timeline view](views/timeline-view.md) 
+
 
 ## Get Started
 
