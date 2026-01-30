@@ -15,7 +15,7 @@ extra_css:
 
 theme:
   name: material
-  logo: assets/projectplanner-logo.svg
+  logo: assets/project-planner-logo-mark.png
   font:
     text: ui-sans-serif
   favicon: assets/favicon.ico
