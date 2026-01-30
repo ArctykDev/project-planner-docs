@@ -5,6 +5,8 @@ date:
   updated: 2026-01-30
 ---
 
+![Dashboard view](assets/project-planner-banner-light.png)
+
 # Welcome to ProjectPlanner.md
 
 Welcome to the ProjectPlanner.md, where you can find tips and guides on how to use and get the most out of your experience with Project Planner plugin for [Obsidian](https://obsidian.md).
