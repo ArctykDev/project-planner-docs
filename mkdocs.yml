@@ -126,6 +126,7 @@ plugins:
       locale: en
       enable_creation_date: false
   - glightbox
+  - social
 
 extra:
   status:

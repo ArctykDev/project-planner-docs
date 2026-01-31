@@ -27,10 +27,10 @@ Plan smarter. Visualize better. Achieve more.
 
 <div class="grid cards md-landing-grid-card" markdown>
 
+- :rocket: **2026-01-31** - [0.6.9 Development Release](blog/posts/0-6-9-dev.md)
 - :test_tube: **2026-01-30** - [Call for Testers!](blog/posts/call-for-testers-macos-linux.md)
-- :rocket: **2026-01-29** - [0.6.7 Development Release](blog/posts/0-6-7-dev.md)
+- :material-arrow-right-circle-outline: **2026-01-29** - [0.6.7 Development Release](blog/posts/0-6-7-dev.md)
 - :material-arrow-right-circle-outline: **2026-01-25** - [0.6.6 Development Release](blog/posts/0-6-6-dev.md)
-- :material-arrow-right-circle-outline: **2026-01-22** - [0.6.5 Development Release](blog/posts/0-6-5-dev.md)
 
 </div>
 
