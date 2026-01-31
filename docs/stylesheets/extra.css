@@ -344,3 +344,33 @@ body {
   font-size: 1.3em;
   font-weight: 350;
 }
+
+/* Blog back button styling */
+.md-post-back-button .md-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--md-primary-fg-color);
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.md-post-back-button .md-button:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  color: white !important;
+  transform: translateX(-2px);
+}
+
+.md-post-back-button .md-button .twemoji svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: white;
+}
+
+.md-content__inner>:last-child {
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+}
