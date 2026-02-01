@@ -374,3 +374,22 @@ body {
     margin-top: 1.6rem;
     margin-bottom: 0;
 }
+
+/* Blog read more link styling */
+.md-post__action a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--md-primary-fg-color);
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.md-post__action a:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  color: white !important;
+  transform: translateX(2px);
+}
