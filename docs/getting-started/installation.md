@@ -2,7 +2,7 @@
 title: Installing Project Planner
 date:
   created: 2026-01-15
-  updated: 2026-01-15
+  updated: 2026-02-01
 readtime: 4
 ---
 
@@ -57,7 +57,7 @@ Project Planner is currently available for Obsidian Desktop. There are two suppo
    - Toggle it on
 
 !!! tip
-BRAT will automatically check for and install updates to Project Planner, keeping you on the latest version.
+    BRAT will automatically check for and install updates to Project Planner, keeping you on the latest version.
 
 ## Take your first steps
 
