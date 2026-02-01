@@ -25,7 +25,7 @@ I'm committed to delivering the most reliable and trustworthy project management
 Due to the increase in releases, I will not announce every release. You can follow the [Changelog](https://projectplanner.md) to see what is changing release to release.
 
 **Schedule:**
-- The rapid development phase will last **14 days (two weeks)**.
+- The rapid development phase will last **14 days (two weeks)**
 - Releases will be pushed on a daily basis
 
 

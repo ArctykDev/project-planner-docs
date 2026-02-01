@@ -44,6 +44,8 @@ Grid View presents your tasks in a spreadsheet-like interface with support for:
 
 Located at the top of the grid view:
 
+![Header Bar](../assets/0-6-10-grid-view-header-bar.png)
+
 - **Project Selector** - Dropdown to switch between projects
 - **View Buttons** - Quick access to Board, Timeline, Dashboard, and Graph views
 - **Add Task Button** - Create new top-level tasks
@@ -55,6 +57,8 @@ Click column headers to:
 
 - **Sort** - Ascending/descending order
 - **Show/Hide** - Toggle column visibility via settings
+
+    ![View Columns](../assets/0-6-10-columns.png)
 - **Resize** - Drag column borders (where supported)
 
 ### Task Rows
@@ -72,13 +76,18 @@ Each row represents a task with:
 ### New Top-Level Task
 
 1. Click the **"+ Add Task"** button in the header
+
+    ![Add New Button](../assets/0-6-10-add-new-button.png)
+
 2. Enter task title
 3. Press Enter or click outside to save
 
 **Or:**
 
-- Right-click in empty area
-- Select "Add Task"
+- Right-click anywhere on the grid
+- Select "Add new task above"
+
+    ![Add New Task Above](../assets/0-6-10-add-new-task-above.png)
 
 ### New Subtask
 
@@ -94,11 +103,6 @@ Each row represents a task with:
 2. Drag it onto the parent task
 3. It becomes a child automatically
 
-**Method 3 - Task Details:**
-
-1. Open task detail panel
-2. Click "Make Subtask"
-3. Select parent task
 
 ## Editing Tasks
 
@@ -107,6 +111,8 @@ Each row represents a task with:
 **Quick Edit:**
 
 - Click any cell to edit its value
+
+    ![Inline Edit](../assets/0-6-10-inline-edit.png)
 - Make changes
 - Click outside or press Enter to save
 - Press Escape to cancel
@@ -124,10 +130,13 @@ Each row represents a task with:
 
 For more complex edits:
 
-1. Click task title or row
-2. Detail panel opens on the right
-3. Edit description, subtasks, links, dependencies
-4. Changes save automatically
+1. Right-click task row or click the task menu button
+2. Select "Open details"
+
+    ![Open details](../assets/0-6-10-open-task-details.png)
+3. Detail panel opens on the right
+4. Edit description, subtasks, links, dependencies
+5. Changes save automatically
 
 ## Task Hierarchy
 
