@@ -24,9 +24,23 @@ I'm committed to delivering the most reliable and trustworthy project management
 
 Due to the increase in releases, I will not announce every release. You can follow the [Changelog](https://projectplanner.md) to see what is changing release to release.
 
-**Schedule:**
-- The rapid development phase will last **14 days (two weeks)**
-- Releases will be pushed on a daily basis
+**Release Plan:**
+    - The rapid development phase will last **14 days (two weeks)**
+    - Releases will be pushed on a daily basis
+
+**Roadmap:**
+    - Version 0.6.11-Dev
+        - Task Details: move checklist up from the bottom of the panel
+        - Board view: enable dragging task cards up and down the buckets
+    - Version 0.6.12-Dev:
+        - Continue fixing bugs, improving polish and refinement
+        - Preparing a solid foundation for the next minor release 0.7.0
+    - Version 0.7.0
+        - New features: 
+            - Task Effort
+            - Header icon support
+            - Grid view column sorting (right/left)
+        - Bug fixes, code improvements
 
 
 ## What to Expect
