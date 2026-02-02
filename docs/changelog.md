@@ -2,13 +2,143 @@
 title: Changelog
 date:
   created: 2026-01-07
-  updated: 2026-01-29
+  updated: 2026-02-03
 readtime: 10
 ---
 
 # Changelog
 
 All notable changes to Obsidian Project Planner will be documented in this file.
+
+## [0.6.11] - 2026-02-02
+
+### Added
+
+#### Board View Card Reordering
+- **Drag-and-Drop Within Buckets**: Enabled precise card reordering within the same bucket
+  - **Visual Drop Indicators**: Blue line appears above or below cards showing exact drop position
+  - **Smart Position Detection**: Automatically detects top half (before) or bottom half (after) based on cursor
+  - **Task Order Persistence**: Reordered cards maintain their position through TaskStore order updates
+  - **Cross-Bucket Support**: Seamlessly handles both reordering within bucket and moving between buckets
+  - **Smooth Animations**: Drop indicator has subtle glow effect for clear visual feedback
+  - Preserves all existing drag-to-bucket-column functionality
+
+### Improved
+
+#### Task Details Panel Layout
+- **Reorganized Field Order**: Improved task details layout for better workflow
+  - **Description Promoted**: Moved Description to appear directly after Task Title (before Status)
+  - **Checklist Repositioned**: Moved Checklist between Tags and Card Preview for easier access
+  - New order: Title → Description → Status → Priority → Tags → Checklist → Card Preview → Bucket → Dates → Dependencies → Links
+  - More logical grouping of related fields for faster task management
+
+## [0.6.10] - 2026-02-01
+
+### Fixed
+
+#### Date Display Timezone Issue
+- **Board View**: Fixed due dates displaying as one day earlier than set
+  - Corrected date parsing to avoid UTC timezone conversion issues
+  - Dates now parse correctly by splitting "YYYY-MM-DD" string and creating Date with explicit values
+  - Ensures dates display consistently across all timezones
+- **Gantt/Timeline View**: Fixed start and due dates displaying incorrectly due to timezone conversion
+  - Applied same date parsing fix to prevent off-by-one-day errors
+  - Timeline bars now position correctly based on actual date values
+
+### Improved
+
+#### Grid View Inline Edit Polish
+- **MS Planner-Level Smoothness**: Refined task title editing with optimistic updates and seamless transitions
+  - **No Disappearing Tasks**: Implemented optimistic UI updates - title changes appear instantly without flicker
+  - **Smooth Fade Transitions**: Input field fades out (150ms) as updated text fades in simultaneously
+  - **Instant Feedback**: New value displays immediately before background save completes
+  - **Scroll Preservation**: Viewport position maintained during title edits
+  - **Escape Key Polish**: Smooth fade back to original value on Escape (no harsh replacement)
+  - **Enter Key Handling**: Prevents default behavior for clean save action
+  - **Opacity Transitions**: Seamless cross-fade between editing and display states
+  - **Background Sync**: TaskStore updates happen after UI transition for perceived instant response
+  - Eliminates the "disappear and reappear" effect when renaming tasks
+
+#### Grid View Add New Task Polish
+- **MS Planner-Level Smoothness**: Enhanced task creation with professional polish and seamless transitions
+  - **Smooth Row Appearance**: New tasks slide in and fade in with cubic-bezier easing (300ms animation)
+  - **Coordinated Focus Timing**: Editor activation precisely timed to coordinate with row animation (150ms delay)
+  - **Inline Editor Fade-In**: Input field smoothly fades in when activated (150ms opacity transition)
+  - **Auto-Selection**: Task title automatically selected for immediate editing
+  - **Hover Lift Effect**: Editable fields have subtle upward lift on hover (1px translateY)
+  - **Input Transitions**: Border color and opacity animate smoothly during focus (200ms ease)
+  - **No Jitters**: Eliminated visual jumps through requestAnimationFrame coordination
+  - **Seamless Flow**: From task creation → row animation → editor activation → text selection happens in one fluid motion
+
+#### Grid View Drag-and-Drop Polish
+- **MS Planner-Level Smoothness**: Enhanced drag-and-drop with professional polish and refinement
+  - **Smooth Animations**: Ghost element fades in on drag start and fades out on drop (100ms transitions)
+  - **Drop Indicator Transitions**: Line indicator smoothly animates position and opacity changes when switching zones
+  - **Performance Optimization**: Throttled drop zone calculations to 60fps while keeping ghost movement instant
+  - **Row Highlight Transitions**: Smooth fade effects on drop target highlighting (120ms ease-out)
+  - **Enhanced Drag Handle**: Subtle scale effects on hover (1.1x) and active (0.95x) with opacity transitions
+  - **Auto-Scroll**: Viewport automatically scrolls when dragging near top/bottom edges (80px threshold)
+  - **Visual Feedback**: Row transitions and borders smoothly animate during zone changes
+  - **Reduced Class Toggling**: Optimized to only update highlights when target row changes
+  - All transitions use consistent easing curves for unified feel
+
+### Fixed
+
+#### Grid View Date Formatting
+- **Start Date Neutral Styling**: Removed conditional formatting from Start Date column
+  - Start dates now always display with neutral gray styling
+  - Conditional formatting (red for overdue, blue for today) only applies to Due Date column
+  - Provides clearer visual distinction between start and due dates
+
+#### Grid View Column Resizing
+- **Expandable Table**: Fixed column resizing constraints on smaller viewports
+  - Changed table from fixed `width: 100%` to `min-width: 100%` with `width: max-content`
+  - Table now expands horizontally when columns are resized beyond viewport width
+  - Horizontal scrolling activates automatically when table exceeds viewport
+  - Column resizing now works consistently across all viewport sizes
+
+## [0.6.9] - 2026-01-31
+
+### Fixed
+
+#### Grid View Scroll Preservation
+- **Smooth Interactions**: Fixed page jumping to top after drag-and-drop operations
+  - Scroll position is now automatically preserved during all TaskStore operations
+  - Eliminated jitter when checking/unchecking tasks
+  - Smooth scroll preservation for status changes, priority updates, and all inline edits
+  - Implemented automatic scroll restoration after subscription-based re-renders
+
+#### Grid View Task Creation
+- **New Task Visibility**: Fixed newly created tasks sometimes disappearing or flickering when pressing Enter
+  - Eliminated all redundant render() calls after TaskStore operations (30+ instances removed)
+  - TaskStore's subscription pattern now exclusively handles re-rendering
+  - Prevented race conditions between manual renders and subscription-based renders
+  - Increased focus timeout to ensure DOM updates complete before activating inline editor
+  - Applied to: inline editors, delete operations, drag-drop, context menus, clipboard operations, and hierarchy changes
+
+#### Markdown Sync Improvements
+- **Task Rename Handling**: Fixed duplicate markdown notes being created when renaming tasks
+  - Old task file is now properly deleted when task title changes
+  - New file created with updated title in one atomic operation
+  - Prevents orphaned markdown files in vault
+- **Bidirectional Title Sync**: Fixed task title changes in markdown files not syncing back to plugin
+  - Changing `title:` in markdown frontmatter now updates task in plugin
+  - Markdown file is automatically renamed to match new title
+  - Full bidirectional sync for task titles now working correctly
+
+#### Grid View Enhancements
+- **Show Completed Tasks Toggle**: Fixed toggle in settings not actually filtering tasks
+  - Setting now properly hides completed tasks when disabled
+  - Only affects Grid View as intended (Board, Timeline, Dashboard unaffected)
+  - Updated setting description to clarify Grid View-only behavior
+- **Horizontal Scrolling**: Enabled horizontal scrolling for Grid View
+  - Table now scrolls horizontally when many columns are visible
+  - Prevents column overflow and data truncation
+  - Both vertical and horizontal scrolling now work correctly
+- **Subtask Drag-and-Drop**: Fixed subtasks being pushed out of parent when reordering
+  - Reordering subtasks within their parent now preserves parent-child relationship
+  - Dragging subtask to another parent's children correctly adopts new parent
+  - Improved parent determination logic based on drop target context
 
 ## [0.6.7] - 2026-01-28
 
