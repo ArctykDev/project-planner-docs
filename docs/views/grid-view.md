@@ -22,21 +22,6 @@ Grid View presents your tasks in a spreadsheet-like interface with support for:
 - **Filtering and sorting** - Focus on what matters
 - **Drag-and-drop reordering** - Organize tasks your way
 
-## Opening Grid View
-
-**From Ribbon:**
-
-- Click the calendar-check icon in the left sidebar
-
-**From Command Palette:**
-
-- Press `Ctrl/Cmd + P`
-- Type "Open Project Planner"
-- Press Enter
-
-**From Settings:**
-
-- Set as default view in Settings → Project Planner → Default View
 
 ## Interface Elements
 
@@ -51,15 +36,16 @@ Located at the top of the grid view:
 - **Add Task Button** - Create new top-level tasks
 - **Filter Indicators** - Shows active filters (status, priority, tags)
 
-### Column Headers
+### Columns
 
 Click column headers to:
 
 - **Sort** - Ascending/descending order
-- **Show/Hide** - Toggle column visibility via settings
+- **Resize** - Drag column borders (where supported)
+
+To show or hide columns, click on the "Columns" button:
 
     ![View Columns](../assets/0-6-10-columns.png)
-- **Resize** - Drag column borders (where supported)
 
 ### Task Rows
 
@@ -84,7 +70,7 @@ Each row represents a task with:
 
 **Or:**
 
-- Right-click anywhere on the grid
+- Right-click anywhere the task row, or click on the "..." button
 - Select "Add new task above"
 
     ![Add New Task Above](../assets/0-6-10-add-new-task-above.png)
@@ -93,9 +79,11 @@ Each row represents a task with:
 
 **Method 1 - Inline:**
 
-1. Hover over parent task
-2. Click the **"Add Subtask"** icon (appears on hover)
-3. Enter subtask title
+1. Hover over a task
+2. Click the **"..."** icon (appears on hover)
+3. Select "Make subtask" from the context menu
+
+![Make subtask](../assets/0-6-12-make-subtask-menu.png)
 
 **Method 2 - Drag and Drop:**
 
@@ -103,6 +91,7 @@ Each row represents a task with:
 2. Drag it onto the parent task
 3. It becomes a child automatically
 
+![Make subtask](../assets/0-6-12-drag-subtask.png)
 
 ## Editing Tasks
 
@@ -153,38 +142,7 @@ For more complex edits:
 1. Drag child task to the left
 2. Drop when vertical line appears at left edge
 
-### Expanding and Collapsing
 
-**Collapse/Expand Single Task:**
-
-- Click the ► or ▼ icon next to task title
-
-**Collapse/Expand All:**
-
-- Use keyboard shortcut (if configured)
-- Or click each parent task individually
-
-**Visual Indicators:**
-
-- ► = Collapsed (children hidden)
-- ▼ = Expanded (children visible)
-- No icon = No children
-
-### Working with Hierarchies
-
-**Benefits:**
-
-- **Organization**: Group related tasks
-- **Planning**: Break large tasks into steps
-- **Tracking**: See progress at parent level
-- **Filtering**: Show/hide entire branches
-
-**Best Practices:**
-
-- Keep hierarchy depth reasonable (2-3 levels)
-- Use parents for phases or milestones
-- Use children for actionable work items
-- Complete children before marking parent complete
 
 ## Filtering Tasks
 
@@ -211,22 +169,6 @@ When filters are active:
 - Or access filter menu and deselect all
 
 ## Sorting Tasks
-
-### Column Sorting
-
-Click any column header to sort:
-
-- **First Click**: Sort ascending (A-Z, earliest first)
-- **Second Click**: Sort descending (Z-A, latest first)
-- **Third Click**: Remove sort
-
-**Sortable Columns:**
-
-- Title (alphabetical)
-- Status (by configured order)
-- Priority (by configured order)
-- Dates (chronological)
-- Bucket (alphabetical)
 
 ### Manual Ordering
 
@@ -271,245 +213,6 @@ Click any column header to sort:
 - Deleting parent task promotes children to top-level
 - No tasks are lost
 - Action cannot be undone (currently)
-
-### Duplicate Task
-
-**Via Context Menu:**
-
-1. Right-click task
-2. Select "Copy"
-3. Right-click where you want the new task go
-4. Select "Paste"
-5. New task created
-
-## Keyboard Shortcuts
-
-### Navigation
-
-- **Tab**: Move to next cell
-- **Shift + Tab**: Move to previous cell
-- **Arrow Keys**: Navigate between cells (when not editing)
-- **Enter**: Edit selected cell / Save edit
-- **Escape**: Cancel edit
-
-### Task Management
-
-- **Delete**: Delete selected task (with confirmation)
-- **Ctrl/Cmd + N**: New task (if configured)
-- **Ctrl/Cmd + Enter**: Mark task complete (if configured)
-
-_Note: Some shortcuts may require configuration in settings_
-
-
-## Integration with Other Views
-
-### Board View
-
-- **Bucket Column**: Determines board column placement
-- **Status Independent**: Bucket ≠ Status
-- **Sync**: Changes in grid reflect in board and vice versa
-
-### Timeline (Gantt) View
-
-- **Date Driven**: Start/due dates determine timeline position
-- **Dependencies**: Show task relationships
-- **Visual Planning**: See grid tasks on calendar timeline
-
-### Dashboard
-
-- **Metrics**: Task counts aggregate from grid
-- **KPIs**: Completion rates calculated from grid data
-- **Projects**: Click project card to open in grid view
-
-### Task Detail Panel
-
-- **Right Sidebar**: Opens when clicking task
-- **Extended Edit**: Edit description, subtasks, links
-- **Dependencies**: Visual dependency editor
-- **Links**: Attach Obsidian notes or external URLs
-
-## Markdown Sync
-
-When "Enable Markdown Sync" is active:
-
-### Auto-Creation
-
-Tasks in grid automatically create markdown files:
-
-- Location: `{ProjectName}/Tasks/{TaskTitle}.md`
-- Format: YAML frontmatter + markdown body
-- Updates: Changes sync bidirectionally
-
-### Manual Sync
-
-- Click "Sync All Tasks Now" in settings
-- All grid tasks generate/update markdown files
-- Useful for bulk operations or initial sync
-
-### Sync Behavior
-
-- **Grid → Markdown**: Updates on task change
-- **Markdown → Grid**: Updates when file saved
-- **Conflict**: Last write wins
-- **New Tasks**: Can create in either location
-
-See [Markdown Sync](../features/markdown-sync.md) for details.
-
-## Daily Note Integration
-
-When "Enable Daily Note Sync" is active:
-
-### Tagged Tasks
-
-Tasks tagged in daily notes appear in grid:
-
-- `#planner` → Default project
-- `#planner/ProjectName` → Specific project
-- Real-time import as you type
-- Updates sync back to daily notes
-
-### Metadata Extraction
-
-Grid tasks from daily notes include:
-
-- Priority from `!!!`, `!!`, `!` indicators
-- Due dates from `📅 YYYY-MM-DD` format
-- Additional tags from hashtags
-- Source link back to daily note
-
-See [Daily Notes Tagging](../features/daily-notes-tagging.md) for details.
-
-## Tips and Best Practices
-
-### Organization
-
-**Use Hierarchy Wisely:**
-
-- Top-level = Projects or phases
-- Children = Deliverables or milestones
-- Grandchildren = Individual tasks
-- Avoid going deeper than 3 levels
-
-**Status Workflow:**
-
-1. Not Started → New tasks
-2. In Progress → Active work
-3. Blocked → Waiting on dependencies
-4. Completed → Finished tasks
-
-**Bucket Assignment:**
-
-- Use buckets for workflow stages
-- Different from status (can be in-progress in any bucket)
-- Helpful for board view visualization
-
-### Efficiency Tips
-
-**Keyboard First:**
-
-- Learn Tab navigation for quick edits
-- Use Enter to edit, Escape to cancel
-- Minimize mouse usage for faster input
-
-**Batch Updates:**
-
-- Sort by status to update many at once
-- Filter to focus on specific subset
-- Use detail panel for complex edits
-
-**Regular Maintenance:**
-
-- Archive completed tasks periodically
-- Review blocked tasks weekly
-- Update due dates proactively
-
-### Performance
-
-**Large Projects:**
-
-- Use filters to reduce visible tasks
-- Collapse unused task trees
-- Consider splitting into multiple projects
-
-**Sync Considerations:**
-
-- Markdown sync adds overhead
-- Disable if not using markdown files
-- Use manual sync for bulk operations
-
-## Troubleshooting
-
-### Tasks Not Appearing
-
-1. **Check Active Project**: Verify correct project selected
-2. **Check Filters**: Clear status/priority/tag filters
-3. **Show Completed**: Enable if looking for finished tasks
-4. **Refresh**: Close and reopen view
-
-### Hierarchy Issues
-
-**Children Not Showing:**
-
-- Click expand icon (►) on parent
-- Check if "Show Completed" is off and children are done
-
-**Can't Create Subtask:**
-
-- Ensure parent task is saved first
-- Try reopening grid view
-- Check for plugin errors in console
-
-### Editing Problems
-
-**Can't Edit Cell:**
-
-- Click directly on cell content
-- Wait for edit mode to activate
-- Check if task is syncing from markdown
-
-**Changes Not Saving:**
-
-- Press Enter or click outside to save
-- Check Developer Console for errors
-- Verify data.json has write permissions
-
-### Performance Issues
-
-**Grid Loading Slowly:**
-
-- Reduce number of visible tasks
-- Disable markdown sync temporarily
-- Check for very large task hierarchies
-
-**Lag When Editing:**
-
-- Close task detail panel if open
-- Reduce number of tags/filters
-- Consider splitting project
-
-## Advanced Features
-
-### URI Linking
-
-Open specific tasks via URI:
-
-```
-obsidian://open-planner-task?id=task-id&project=project-id
-```
-
-Use for:
-
-- External integrations
-- Quick navigation from other notes
-- Bookmark frequently accessed tasks
-
-### Console Debugging
-
-Enable Developer Console (Ctrl+Shift+I):
-
-- Look for `[Project Planner]` messages
-- Check for errors during task operations
-- Verify sync operations with `[TaskSync]` logs
 
 ### Data Structure
 
