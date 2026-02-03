@@ -50,16 +50,16 @@ Plan smarter. Visualize better. Achieve more.
 </div>
 
 <div align="center" markdown>
-<p class="md-landing-h2">Check out the Views</p>
-<p class="md-landing-p">Powerful project management tools integrated directly into your vault</p>
+<p class="md-landing-h2">Multiple Views for Every Workflow</p>
+<p class="md-landing-p">Visualize and manage your projects with flexible view options tailored to your needs</p>
 </div>
 
 <div class="grid cards md-landing-grid-card" markdown>
 
-- :material-view-dashboard: **Dashboard**<hr> <p>Get a comprehensive overview of all your projects and tasks with customizable widgets, metrics, and at-a-glance status tracking.</p>
-- :material-grid-large: **Grid**<hr> <p>Manage tasks in a powerful spreadsheet-like interface with sortable columns, filtering, and bulk editing capabilities.</p>
-- :fontawesome-solid-table-columns: **Board**<hr> <p>Visualize your workflow with a Kanban-style board view, drag-and-drop tasks between columns, and track progress visually.</p>
-- :fontawesome-solid-chart-gantt: **Timeline**<hr> <p>Plan and schedule projects with a Gantt chart timeline, visualize dependencies, and manage deadlines effectively.</p>
+- :material-view-dashboard: **Dashboard**<hr> <p>Get a comprehensive overview of all your projects and tasks with customizable widgets, metrics, and at-a-glance status tracking.</p><hr><p>[:octicons-arrow-right-24: Learn about Dashaboard view](views/dashboard-view.md)</p>
+- :material-grid-large: **Grid**<hr> <p>Manage tasks in a powerful spreadsheet-like interface with sortable columns, filtering, and bulk editing capabilities.</p><hr><p>[:octicons-arrow-right-24: Learn about Grid view](views/grid-view.md)</p>
+- :fontawesome-solid-table-columns: **Board**<hr> <p>Visualize your workflow with a Kanban-style board view, drag-and-drop tasks between columns, and track progress visually.</p><hr><p>[:octicons-arrow-right-24: Learn about Board view](views/board-view.md)</p>
+- :fontawesome-solid-chart-gantt: **Timeline**<hr> <p>Plan and schedule projects with a Gantt chart timeline, visualize dependencies, and manage deadlines effectively.</p><hr><p>[:octicons-arrow-right-24: Learn about Timeline view](views/timeline-view.md)</p>
 
 </div>
 
