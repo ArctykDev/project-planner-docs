@@ -2,7 +2,7 @@
 title: Grid View
 date:
   created: 2026-01-14
-  updated: 2026-01-29
+  updated: 2026-02-02
 readtime: 9
 ---
 
@@ -10,7 +10,7 @@ readtime: 9
 
 The Grid View is the primary task management interface in Project Planner, providing a powerful hierarchical table for organizing and managing your tasks.
 
-![Grid view](../assets/version-0-6-7-grid-view.png)
+![Hierarchical spreadsheet interface displaying tasks in rows with columns for Title, Status, Priority, Bucket, Tags, Deps, Start Date, Due Date, Created, and Modified. Tasks are organized with parent-child relationships shown through expandable tree structure with arrow icons](../assets/version-0-6-7-grid-view.png)
 
 ## Overview
 
@@ -29,7 +29,7 @@ Grid View presents your tasks in a spreadsheet-like interface with support for:
 
 Located at the top of the grid view:
 
-![Header Bar](../assets/0-6-10-grid-view-header-bar.png)
+![Navigation bar containing project selector dropdown on the left, four view toggle buttons for Board, Timeline, Dashboard, and Graph in the center, plus Add Task button and settings icon on the right](../assets/0-6-10-grid-view-header-bar.png)
 
 - **Project Selector** - Dropdown to switch between projects
 - **View Buttons** - Quick access to Board, Timeline, Dashboard, and Graph views
@@ -45,7 +45,7 @@ Click column headers to:
 
 To show or hide columns, click on the "Columns" button:
 
-    ![View Columns](../assets/0-6-10-columns.png)
+    ![Columns button highlighted in purple with dropdown menu showing checkboxes for Title, Status, Priority, Bucket, Tags, Deps, Start Date, Due Date, Created, and Modified columns, all currently checked](../assets/0-6-10-columns.png)
 
 ### Task Rows
 
@@ -63,7 +63,7 @@ Each row represents a task with:
 
 1. Click the **"+ Add Task"** button in the header
 
-    ![Add New Button](../assets/0-6-10-add-new-button.png)
+    ![Purple button labeled Add Task with plus icon located in the header toolbar between view switcher buttons and settings icon](../assets/0-6-10-add-new-button.png)
 
 2. Enter task title
 3. Press Enter or click outside to save
@@ -73,7 +73,7 @@ Each row represents a task with:
 - Right-click anywhere the task row, or click on the "..." button
 - Select "Add new task above"
 
-    ![Add New Task Above](../assets/0-6-10-add-new-task-above.png)
+    ![Context menu displaying options including Add new task above option at the top, followed by other task management options in a white dropdown menu](../assets/0-6-10-add-new-task-above.png)
 
 ### New Subtask
 
@@ -83,7 +83,7 @@ Each row represents a task with:
 2. Click the **"..."** icon (appears on hover)
 3. Select "Make subtask" from the context menu
 
-![Make subtask](../assets/0-6-12-make-subtask-menu.png)
+![Context menu opened from three-dot button showing Make subtask option among other task actions in a vertical list format](../assets/0-6-12-make-subtask-menu.png)
 
 **Method 2 - Drag and Drop:**
 
@@ -91,7 +91,7 @@ Each row represents a task with:
 2. Drag it onto the parent task
 3. It becomes a child automatically
 
-![Make subtask](../assets/0-6-12-drag-subtask.png)
+![Task being dragged with mouse cursor showing the task moving toward another task to create parent-child relationship, with visual indicator showing drop zone](../assets/0-6-12-drag-subtask.png)
 
 ## Editing Tasks
 
@@ -101,7 +101,7 @@ Each row represents a task with:
 
 - Click any cell to edit its value
 
-    ![Inline Edit](../assets/0-6-10-inline-edit.png)
+    ![Task cell in edit mode showing text input field with cursor active, allowing direct editing of task properties within the grid without opening separate panel](../assets/0-6-10-inline-edit.png)
 - Make changes
 - Click outside or press Enter to save
 - Press Escape to cancel
@@ -122,7 +122,7 @@ For more complex edits:
 1. Right-click task row or click the task menu button
 2. Select "Open details"
 
-    ![Open details](../assets/0-6-10-open-task-details.png)
+    ![Context menu showing Open details option among other task actions, accessed by right-clicking on a task row or clicking the menu button](../assets/0-6-10-open-task-details.png)
 3. Detail panel opens on the right
 4. Edit description, subtasks, links, dependencies
 5. Changes save automatically

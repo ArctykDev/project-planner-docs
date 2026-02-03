@@ -2,7 +2,7 @@
 title: ProjectPlanner.md
 date:
   created: 2026-01-07
-  updated: 2026-01-30
+  updated: 2026-02-03
 toc: disabled
 hide: toc
 ---
@@ -46,6 +46,20 @@ Plan smarter. Visualize better. Achieve more.
 - :material-note-plus: **Seamless Note Integration**<hr> <p>Link tasks directly to your notes, leverage Obsidian's powerful backlinks, and automatically generate task notes that sync bidirectionally.</p>
 - :material-safe-square-outline: **Vault-Centric Design**<hr> <p>Works entirely within your Obsidian vault with no external databases or cloud dependencies—your project data stays where it belongs.</p>
 - :octicons-tag-24: **Daily Notes Tagging**<hr> <p>Built-in support for Obsidian's Daily Notes workflow, allowing you to tag tasks and create time-based references automatically.</p>
+
+</div>
+
+<div align="center" markdown>
+<p class="md-landing-h2">Check out the Views</p>
+<p class="md-landing-p">Powerful project management tools integrated directly into your vault</p>
+</div>
+
+<div class="grid cards md-landing-grid-card" markdown>
+
+- :material-view-dashboard: **Dashboard**<hr> <p>Get a comprehensive overview of all your projects and tasks with customizable widgets, metrics, and at-a-glance status tracking.</p>
+- :material-grid-large: **Grid**<hr> <p>Manage tasks in a powerful spreadsheet-like interface with sortable columns, filtering, and bulk editing capabilities.</p>
+- :fontawesome-solid-table-columns: **Board**<hr> <p>Visualize your workflow with a Kanban-style board view, drag-and-drop tasks between columns, and track progress visually.</p>
+- :fontawesome-solid-chart-gantt: **Timeline**<hr> <p>Plan and schedule projects with a Gantt chart timeline, visualize dependencies, and manage deadlines effectively.</p>
 
 </div>
 

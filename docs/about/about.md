@@ -29,5 +29,6 @@ Hi, I'm **James Hawkins**, the creator and developer of Project Planner. In my d
 
 - [GitHub](https://github.com/ArctykDev)
 - [YouTube](https://youtube.com/@ArctykDev)
+- [Project Planner Discord](https://discord.gg/6rgmVKK4)
 
 

@@ -134,7 +134,12 @@ extra:
   social:
     - icon: fontawesome/brands/youtube
       link: https://youtube.com/@ArctykDev
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/6rgmVKK4
     - icon: simple/buymeacoffee
       link: https://www.buymeacoffee.com/ArctykDev
     - icon: fontawesome/brands/github
       link: https://github.com/ArctykDev/obsidian-project-planner
+  announcement:
+    # To use the announcement banner, uncomment the line below and customize the message
+    # message: "🎉 <strong>New release!</strong> Check out the latest features in version X.X.X"
