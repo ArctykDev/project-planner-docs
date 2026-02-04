@@ -26,12 +26,10 @@ Due to the increase in releases, I will not announce every release. You can foll
 
 **Release Plan:**
 
-- The rapid development phase will last **14 days (two weeks)**
+- The rapid development phase will last **7 days**
 - Releases will be pushed on a daily basis
 
-**Roadmap:**
-
-### Roadmap:
+## Roadmap
 
 - **2026-02-02 Version 0.6.11-Dev** 
   - Task Details: move checklist up from the bottom of the panel 
