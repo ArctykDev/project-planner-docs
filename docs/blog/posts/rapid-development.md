@@ -2,7 +2,7 @@
 title: Rapid Development
 date:
   created: 2026-02-01
-  updated: 2026-02-01
+  updated: 2026-02-04
 authors:
   - ArctykDev
 categories:
@@ -31,17 +31,28 @@ Due to the increase in releases, I will not announce every release. You can foll
 
 **Roadmap:**
 
-- 2026-02-02 Version 0.6.11-Dev
-    - Task Details: move checklist up from the bottom of the panel
-    - Board view: enable dragging task cards up and down the buckets
-- 2026-02-03 Version 0.6.12-Dev:
-    - Continue fixing bugs, improving polish and refinement
-    - Preparing a solid foundation for the next minor release 0.7.0
-- TBD Version 0.7.0
-    - New features: 
-        - Task Effort
-        - Header icon support
-        - Grid view column sorting (right/left)
+### Roadmap:
+
+- **2026-02-02 Version 0.6.11-Dev** 
+  - Task Details: move checklist up from the bottom of the panel 
+  - Board view: enable dragging task cards up and down the buckets 
+
+- **2026-02-04 Version 0.6.12-Dev** 
+  - Select date format in plugin settings 
+  - Fix plugin header in grid view
+  - Can now choose a base folder for project notes
+  - Build test infrastructure to improve quality control and reduce potential for bugs 
+
+- **2026-02-06 Version 0.6.13-Dev** 
+  - Code cleanup 
+  - Bug fixes (if needed) 
+  - Preparing a solid foundation for the next minor release 0.7.0 
+
+- **TBD Version - 0.7.0** 
+  - New features: 
+    - Task Effort 
+    - Header icon support 
+    - Grid view column sorting (right/left) 
     - Bug fixes, code improvements
 
 
