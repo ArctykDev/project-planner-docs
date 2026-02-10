@@ -29,7 +29,7 @@ Grid View presents your tasks in a spreadsheet-like interface with support for:
 
 Located at the top of the grid view:
 
-![Navigation bar containing project selector dropdown on the left, four view toggle buttons for Board, Timeline, Dashboard, and Graph in the center, plus Add Task button and settings icon on the right](../assets/0-6-10-grid-view-header-bar.png){ width="200" .center}
+![Navigation bar containing project selector dropdown on the left, four view toggle buttons for Board, Timeline, Dashboard, and Graph in the center, plus Add Task button and settings icon on the right](../assets/0-6-10-grid-view-header-bar.png){ width="400" .center}
 
 - **Project Selector** - Dropdown to switch between projects
 - **View Buttons** - Quick access to Board, Timeline, Dashboard, and Graph views
@@ -73,7 +73,7 @@ Each row represents a task with:
 - Right-click anywhere the task row, or click on the "..." button
 - Select "Add new task above"
 
-    ![Context menu displaying options including Add new task above option at the top, followed by other task management options in a white dropdown menu](../assets/0-6-10-add-new-task-above.png){ width="200" .center}
+    ![Context menu displaying options including Add new task above option at the top, followed by other task management options in a white dropdown menu](../assets/0-6-10-add-new-task-above.png){ width="300" .center}
 
 ### New Subtask
 
@@ -83,7 +83,7 @@ Each row represents a task with:
 2. Click the **"..."** icon (appears on hover)
 3. Select "Make subtask" from the context menu
 
-![Context menu opened from three-dot button showing Make subtask option among other task actions in a vertical list format](../assets/0-6-12-make-subtask-menu.png){ width="200" .center}
+![Context menu opened from three-dot button showing Make subtask option among other task actions in a vertical list format](../assets/0-6-12-make-subtask-menu.png){ width="300" .center}
 
 **Method 2 - Drag and Drop:**
 
@@ -91,7 +91,7 @@ Each row represents a task with:
 2. Drag it onto the parent task
 3. It becomes a child automatically
 
-![Task being dragged with mouse cursor showing the task moving toward another task to create parent-child relationship, with visual indicator showing drop zone](../assets/0-6-12-drag-subtask.png){ width="200" .center}
+![Task being dragged with mouse cursor showing the task moving toward another task to create parent-child relationship, with visual indicator showing drop zone](../assets/0-6-12-drag-subtask.png){ width="350" .center}
 
 ## Editing Tasks
 
