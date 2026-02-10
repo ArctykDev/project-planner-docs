@@ -34,13 +34,13 @@ Each bucket has two sections:
 - **Completed Tasks**: Collapsible section for finished tasks
 - Toggle completed section visibility per bucket
 
-![Bucket sections - Active Tasks / Completed Tasks](../assets/buckets-expanded.png){ width="200" }
+![Bucket sections - Active Tasks / Completed Tasks](../assets/buckets-expanded.png){ width="200" .center}
 
 ## **What are task cards?**
 
 **Task cards** display information for each task in Board view. 
 
-![Task card](../assets/task-cards.png){ width="200" }
+![Task card](../assets/task-cards.png){ width="200" .center}
 
 Each card shows:
 

@@ -29,7 +29,7 @@ Grid View presents your tasks in a spreadsheet-like interface with support for:
 
 Located at the top of the grid view:
 
-![Navigation bar containing project selector dropdown on the left, four view toggle buttons for Board, Timeline, Dashboard, and Graph in the center, plus Add Task button and settings icon on the right](../assets/0-6-10-grid-view-header-bar.png)
+![Navigation bar containing project selector dropdown on the left, four view toggle buttons for Board, Timeline, Dashboard, and Graph in the center, plus Add Task button and settings icon on the right](../assets/0-6-10-grid-view-header-bar.png){ width="200" .center}
 
 - **Project Selector** - Dropdown to switch between projects
 - **View Buttons** - Quick access to Board, Timeline, Dashboard, and Graph views
@@ -63,7 +63,7 @@ Each row represents a task with:
 
 1. Click the **"+ Add Task"** button in the header
 
-    ![Purple button labeled Add Task with plus icon located in the header toolbar between view switcher buttons and settings icon](../assets/0-6-10-add-new-button.png)
+    ![Purple button labeled Add Task with plus icon located in the header toolbar between view switcher buttons and settings icon](../assets/0-6-10-add-new-button.png){ width="200" .center}
 
 2. Enter task title
 3. Press Enter or click outside to save
