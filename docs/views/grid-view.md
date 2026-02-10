@@ -23,9 +23,9 @@ Grid View presents your tasks in a spreadsheet-like interface with support for:
 - **Drag-and-drop reordering** - Organize tasks your way
 
 
-## Interface Elements
+## How to navigate the Grid view
 
-### Header Bar
+### Using the top header bar
 
 Located at the top of the grid view:
 
@@ -36,12 +36,11 @@ Located at the top of the grid view:
 - **Add Task Button** - Create new top-level tasks
 - **Filter Indicators** - Shows active filters (status, priority, tags)
 
-### Columns
+### How to customize columns
 
-Click column headers to:
-
-- **Sort** - Ascending/descending order
-- **Resize** - Drag column borders (where supported)
+- Click the column headers to sort acending/decending order (▲/▼)
+- Hover over the column header edge to adjust the width of the column (↔)
+- Hover/click on the colum header to drag the column 
 
 To show or hide columns, click on the "Columns" button:
 
@@ -57,9 +56,9 @@ Each row represents a task with:
 - **Action Buttons** - Delete, add child, open details
 
 
-## Creating Tasks
+## How to create a task
 
-### New Top-Level Task
+### To add a new Top-Level task
 
 1. Click the **"+ Add Task"** button in the header
 
@@ -75,7 +74,7 @@ Each row represents a task with:
 
     ![Context menu displaying options including Add new task above option at the top, followed by other task management options in a white dropdown menu](../assets/0-6-10-add-new-task-above.png){ width="300" .center}
 
-### New Subtask
+### How to add a new subtask
 
 **Method 1 - Inline:**
 
@@ -93,128 +92,35 @@ Each row represents a task with:
 
 ![Task being dragged with mouse cursor showing the task moving toward another task to create parent-child relationship, with visual indicator showing drop zone](../assets/0-6-12-drag-subtask.png){ width="350" .center}
 
-## Editing Tasks
+## How do I edit tasks?
 
-### Inline Editing
+You can edit tasks in-line or through the Task Details panel. 
 
-**Quick Edit:**
+### To edit in-line:
 
 - Click any cell to edit its value
 
-    ![Task cell in edit mode showing text input field with cursor active, allowing direct editing of task properties within the grid without opening separate panel](../assets/0-6-10-inline-edit.png){ width="200" .center}
+    ![Task cell in edit mode showing text input field with cursor active, allowing direct editing of task properties within the grid without opening separate panel](../assets/0-6-10-inline-edit.png){ width="300" .center}
+
 - Make changes
 - Click outside or press Enter to save
 - Press Escape to cancel
 
-**Supported Fields:**
+### To edit using the Task Details panel
 
-- Title (text input)
-- Status (dropdown)
-- Priority (dropdown)
-- Bucket (dropdown)
-- Dates (date picker)
-- Tags (multi-select)
-
-### Detail Panel
-
-For more complex edits:
+The Task Details panel provides a way to update all task options in one view.
 
 1. Right-click task row or click the task menu button
 2. Select "Open details"
 
-    ![Context menu showing Open details option among other task actions, accessed by right-clicking on a task row or clicking the menu button](../assets/0-6-10-open-task-details.png){ width="200" .center}
+    ![Context menu showing Open details option among other task actions, accessed by right-clicking on a task row or clicking the menu button](../assets/0-6-10-open-task-details.png){ width="350" .center}
+
 3. Detail panel opens on the right
 4. Edit description, subtasks, links, dependencies
 5. Changes save automatically
 
-## Task Hierarchy
 
-### Creating Parent-Child Relationships
-
-**Drag and Drop:**
-
-1. Select a task
-2. Drag it onto another task
-3. Release to make it a child
-
-**Promote to Top-Level:**
-
-1. Drag child task to the left
-2. Drop when vertical line appears at left edge
-
-
-
-## Filtering Tasks
-
-### Filter Bar
-
-Access filters via the header:
-
-- **Status Filter**: Show only specific statuses
-- **Priority Filter**: Filter by priority level
-- **Tag Filter**: Show tasks with specific tags
-- **Completed Toggle**: Show/hide completed tasks
-
-### Active Filter Indicators
-
-When filters are active:
-
-- Labels appear in header showing active filters
-- Example: "Status: In Progress" or "Tags: Frontend, Urgent"
-- Click filter label to modify or clear
-
-### Clearing Filters
-
-- Click individual filter indicator to remove
-- Or access filter menu and deselect all
-
-## Sorting Tasks
-
-### Manual Ordering
-
-**Drag and Drop:**
-
-1. Click and hold task row
-2. Drag to new position
-3. Release to drop
-4. Order is saved automatically
-
-**Hierarchy Considerations:**
-
-- Can reorder within same parent
-- Can reorder top-level tasks
-- Cannot mix levels during reorder
-
-## Task Actions
-
-### Checkbox (Complete)
-
-- Click checkbox to mark complete
-- Status automatically changes to "Completed"
-- Task may be hidden if "Show Completed" is off
-- Uncheck to mark incomplete
-
-### Delete Task
-
-**Method 1:**
-
-1. Hover over task row
-2. Click delete icon (trash can)
-3. Confirm deletion
-
-**Method 2:**
-
-1. Right-click task
-2. Select "Delete"
-3. Confirm
-
-**Deletion Behavior:**
-
-- Deleting parent task promotes children to top-level
-- No tasks are lost
-- Action cannot be undone (currently)
-
-### Data Structure
+## How are tasks stored?
 
 For detailed information about how tasks and projects are stored, see the [Data Structure Reference](../features/data-structure.md).
 
@@ -228,10 +134,3 @@ For detailed information about how tasks and projects are stored, see the [Data 
 - Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
-
-**Related Documentation:**
-
-- [Task Details View](task-details-view.md) - Individual task management
-- [Board View Guide](board-view.md) - Kanban workflows
-- [Timeline View Guide](timeline-view.md) - Gantt charts
-- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships
