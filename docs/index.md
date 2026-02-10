@@ -27,7 +27,8 @@ Plan smarter. Visualize better. Achieve more.
 
 <div class="grid cards md-landing-grid-card" markdown>
 
-- :rocket: **2026-02-04** - [Rapid Development](blog/posts/rapid-development.md)
+- :rocket: **2026-02-10** - [0.6.13 Development Release](blog/posts/0-6-13-dev.md)
+- material-arrow-right-circle-outline: **2026-02-04** - [Rapid Development](blog/posts/rapid-development.md)
 - :material-arrow-right-circle-outline: **2026-01-31** - [0.6.9 Development Release](blog/posts/0-6-9-dev.md)
 - :test_tube: **2026-01-30** - [Call for Testers!](blog/posts/call-for-testers-macos-linux.md)
 - :material-arrow-right-circle-outline: **2026-01-29** - [0.6.7 Development Release](blog/posts/0-6-7-dev.md)
