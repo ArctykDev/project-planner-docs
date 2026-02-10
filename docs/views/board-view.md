@@ -2,7 +2,7 @@
 title: Board View
 date:
   created: 2026-01-14
-  updated: 2026-01-29
+  updated: 2026-02-09
 readtime: 8
 ---
 
@@ -14,17 +14,19 @@ The Board View provides a Microsoft Planner-style Kanban board for visualizing a
 
 ![Board view](../assets/version-0-6-7-board-view.png)
 
-## Features
+## **What are buckets?**
 
-### **Custom Buckets**
+In Obsidian Project Planner, columns are called **buckets**. Buckets represent a step in your workflow process, such as "To Do", "In Progress", "In Review", "Done". Buckets are flexible, meaning they can be renamed, added or removed, rearranged or coloured to suite your workflow.
 
-- Per-project bucket configuration (independent from status)
-- Drag and drop to reorder buckets
-- Add, rename, and delete buckets per project
-- Default buckets: "To Do", "In Progress", "Done"
+### **Bucket features**
+
+- Buckets are configured at the project-level. This means each project can have a different bucket configuration
+- Drag and drop to easily reorder buckets
+- Add, rename, and delete buckets (Right-click or open bucket menu)
+- Default buckets: "To Do", "In Progress", "Done" are placeholders and can be customized
+- The "Unassigned" bucket cannot be moved or coloured, but it can be renamed
 - Each bucket shows task count (active + completed)
-
-### **Dual Task Sections**
+- Tasks are shown in task cards which can be added, edited, or removed from buckets
 
 Each bucket has two sections:
 
@@ -32,19 +34,13 @@ Each bucket has two sections:
 - **Completed Tasks**: Collapsible section for finished tasks
 - Toggle completed section visibility per bucket
 
-### **Leaf Tasks Only**
+![Bucket sections - Active Tasks / Completed Tasks](../assets/buckets-expanded.png){ width="200" }
 
-- Board displays only leaf tasks (tasks without children)
-- Parent tasks remain in Grid View for hierarchical editing
-- Keeps board focused on actionable items
+## **What are task cards?**
 
-### **Smart Filtering**
+**Task cards** display information for each task in Board view. 
 
-- Priority filter dropdown (All, Low, Medium, High, Critical)
-- Search filter for task titles
-- Filters apply across all buckets
-
-### **Task Cards Display**
+![Task card](../assets/task-cards.png){ width="200" }
 
 Each card shows:
 
@@ -59,41 +55,8 @@ Each card shows:
 - **Completion Checkbox** - Click to mark complete (moves to completed section)
 - **Context Menu** - Right-click for delete option
 
-### **Smart Columns**
 
-- Automatically created from custom statuses in settings
-- Default columns: To Do, In Progress, Done
-- Each column shows task count
-- "+ Add task" button at top of each column
-
-### **Drag and Drop**
-
-- **Tasks**: Drag cards between buckets to reassign
-- **Buckets**: Drag bucket headers to reorder columns
-- Visual feedback during drag (opacity, hover states)
-- Bucket highlights when dragging task over it
-- Automatic bucket assignment on task drop
-- Bucket order persists per project
-
-## Usage
-
-### **Opening Board View**
-
-**Via Ribbon:**
-
-- Click the 📋 board icon in the left sidebar
-
-**Via Command Palette:**
-
-- Press `Ctrl/Cmd + P`
-- Type "Open Board View"
-- Press Enter
-
-**Via Keyboard:**
-
-- Assign a hotkey in Settings → Hotkeys → "Open Board View"
-
-### **Managing Tasks**
+## **How to Manage Tasks**
 
 **Create Task:**
 
@@ -125,51 +88,9 @@ Each card shows:
 - Select "Delete" option
 - Confirm deletion
 
-**Toggle Completed:**
-
-- Click "▼ Completed (X)" header in any bucket
-- Collapsed state saves per bucket per project
-- Helps focus on active work
-
-### **Global Navigation**
-
-The board view includes the same global header as Grid View:
-
-- **Project Dropdown** - Switch between projects
-- **Add Task** - Quick task creation
-- **📋 Hub** - Open project hub documentation
-- **⚙️ Settings** - Open plugin settings
-
-## Microsoft Planner Style
-
-The Board View mimics Microsoft Planner's clean, modern design:
-
-### **Visual Elements**
-
-- Rounded cards with subtle shadows
-- Hover animations (lift effect)
-- Color-coded tags and priorities
-- Clean typography and spacing
-
-### **Color Indicators**
-
-- **Overdue Dates**: Red background, bold text
-- **Today's Dates**: Blue background, bold text
-- **Completed Subtasks**: Green background
-- **Priority Badges**: Emoji indicators (🔥⚡)
-
-### **Layout**
-
-- Fixed column width (320px) for consistency
-- Scrollable columns for long task lists
-- Horizontal scroll for many columns
-- Responsive card heights based on content
-
-## Bucket Configuration
+## How to Manage Buckets
 
 Buckets are configured per project and independent from task status:
-
-### **Managing Buckets**
 
 1. Click bucket header to select
 2. Drag bucket headers left/right to reorder
@@ -177,7 +98,7 @@ Buckets are configured per project and independent from task status:
 4. Rename bucket: Edit name inline in bucket header
 5. Delete bucket: Select bucket, click delete (tasks remain, bucketId cleared)
 
-### **Bucket vs Status**
+### **What is the difference bewteen Bucket and Status?**
 
 Important distinction:
 
@@ -237,52 +158,6 @@ Add colored tags for:
 - Card shows completion percentage
 - Green badge when all subtasks complete
 
-## Keyboard Shortcuts
-
-While the board doesn't have specific keyboard shortcuts, you can:
-
-- Use standard Obsidian navigation (`Ctrl/Cmd + Tab`, etc.)
-- Click cards to open details and use all keyboard editing
-- Assign custom hotkeys in Settings
-
-## Integration
-
-### **Task Details Panel**
-
-- Clicking any card opens the Task Details panel (right sidebar)
-- Edit all properties without leaving the board
-- Bucket dropdown selector for reassignment
-- Changes sync instantly to the card
-
-### **Grid View**
-
-- Same tasks appear in both views
-- Board shows leaf tasks only; Grid shows full hierarchy
-- Parent tasks must be managed in Grid View
-- Switch between views seamlessly with global header
-
-### **Project Hub**
-
-- Click "📋 Hub" to view project documentation
-- Hub includes links back to tasks via URI protocol
-- Use `obsidian://open-planner-task?id=...&project=...` for deep linking
-
-### **Markdown Sync** (v0.6.2+)
-
-- Tasks sync bidirectionally with markdown notes in vault
-- Board changes update corresponding markdown files
-- Markdown edits sync back to board view
-- See [Markdown Sync](../features/markdown-sync.md) for details
-
-## Performance
-
-The board is optimized for smooth performance:
-
-- Renders only visible cards
-- Efficient drag and drop with HTML5 API
-- Minimal re-renders on updates
-- Handles hundreds of tasks smoothly
-
 ## Tips & Best Practices
 
 1. **Limit Bucket Count**: 3-7 buckets work best for visual clarity
@@ -293,62 +168,6 @@ The board is optimized for smooth performance:
 6. **Hide Parents**: Board shows leaf tasks only - manage hierarchies in Grid View
 7. **Per-Project Layouts**: Each project can have unique bucket configurations
 
-## Comparison to Grid View
-
-| Feature           | Board View             | Grid View                  |
-| ----------------- | ---------------------- | -------------------------- |
-| Layout            | Kanban buckets         | Hierarchical table         |
-| Tasks Displayed   | Leaf tasks only        | All tasks (with hierarchy) |
-| Organization      | Custom buckets         | Parent/child relationships |
-| Best For          | Visual workflow        | Detailed editing           |
-| Task Movement     | Drag & drop            | Manual field changes       |
-| Metadata Display  | Visual badges on cards | Full table columns         |
-| Filtering         | Priority + search      | Multi-field filter bar     |
-| Bulk Edit         | Via detail panel       | Inline editing             |
-| Status Management | Card indicator         | Status column              |
-| Bucket Assignment | Drag to bucket         | Bucket column dropdown     |
-
-Use **Board View** for visual task organization and quick bucket reassignment.
-Use **Grid View** for hierarchical task management and detailed bulk editing.
-
-## Troubleshooting
-
-**Cards not showing?**
-
-- Check if tasks are leaf tasks (tasks with children only appear in Grid View)
-- Verify tasks match current filters (priority, search)
-- Ensure correct project is selected in dropdown
-
-**Parent tasks missing?**
-
-- Parent tasks are intentionally hidden in Board View
-- Use Grid View to manage hierarchical task structures
-- Board displays leaf tasks only for focused workflow
-
-**Drag and drop not working?**
-
-- Ensure you're dragging the card body (not clicking text fields)
-- Release mouse over the bucket's active or completed section
-- Try dragging bucket headers to reorder instead
-
-**Bucket order not saving?**
-
-- Bucket order is saved per project automatically
-- Switching projects loads that project's bucket configuration
-- Try closing and reopening the view if changes don't persist
-
-**Completed section issues?**
-
-- Collapsed state saves per bucket per project
-- Toggle using the "▼ Completed (X)" header
-- If tasks don't move to completed, check task's `completed` field
-
-**Performance issues?**
-
-- Large projects (500+ tasks) may render slowly
-- Use filters to reduce visible tasks
-- Consider archiving or moving completed tasks to separate project
-
 ---
 
 ## Support
@@ -358,10 +177,3 @@ Use **Grid View** for hierarchical task management and detailed bulk editing.
 - Read the [FAQ](../getting-started/faq.md)
 - Check [Home](../index.md) for plugin overview
 - Report bugs on [GitHub Issues](https://github.com/ArctykDev/project-planner-docs/issues)
-
-**Related Documentation:**
-
-- [Grid View Guide](grid-view.md) - Detailed task management
-- [Dashboard View Guide](dashboard-view.md) - Analytics and KPIs
-- [Timeline View Guide](timeline-view.md) - Gantt charts
-- [Dependency Graph Guide](dependency-graph-view.md) - Task relationships
