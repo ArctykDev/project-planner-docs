@@ -73,7 +73,7 @@ Each row represents a task with:
 - Right-click anywhere the task row, or click on the "..." button
 - Select "Add new task above"
 
-    ![Context menu displaying options including Add new task above option at the top, followed by other task management options in a white dropdown menu](../assets/0-6-10-add-new-task-above.png)
+    ![Context menu displaying options including Add new task above option at the top, followed by other task management options in a white dropdown menu](../assets/0-6-10-add-new-task-above.png){ width="200" .center}
 
 ### New Subtask
 
@@ -83,7 +83,7 @@ Each row represents a task with:
 2. Click the **"..."** icon (appears on hover)
 3. Select "Make subtask" from the context menu
 
-![Context menu opened from three-dot button showing Make subtask option among other task actions in a vertical list format](../assets/0-6-12-make-subtask-menu.png)
+![Context menu opened from three-dot button showing Make subtask option among other task actions in a vertical list format](../assets/0-6-12-make-subtask-menu.png){ width="200" .center}
 
 **Method 2 - Drag and Drop:**
 
@@ -91,7 +91,7 @@ Each row represents a task with:
 2. Drag it onto the parent task
 3. It becomes a child automatically
 
-![Task being dragged with mouse cursor showing the task moving toward another task to create parent-child relationship, with visual indicator showing drop zone](../assets/0-6-12-drag-subtask.png)
+![Task being dragged with mouse cursor showing the task moving toward another task to create parent-child relationship, with visual indicator showing drop zone](../assets/0-6-12-drag-subtask.png){ width="200" .center}
 
 ## Editing Tasks
 
@@ -101,7 +101,7 @@ Each row represents a task with:
 
 - Click any cell to edit its value
 
-    ![Task cell in edit mode showing text input field with cursor active, allowing direct editing of task properties within the grid without opening separate panel](../assets/0-6-10-inline-edit.png)
+    ![Task cell in edit mode showing text input field with cursor active, allowing direct editing of task properties within the grid without opening separate panel](../assets/0-6-10-inline-edit.png){ width="200" .center}
 - Make changes
 - Click outside or press Enter to save
 - Press Escape to cancel
@@ -122,7 +122,7 @@ For more complex edits:
 1. Right-click task row or click the task menu button
 2. Select "Open details"
 
-    ![Context menu showing Open details option among other task actions, accessed by right-clicking on a task row or clicking the menu button](../assets/0-6-10-open-task-details.png)
+    ![Context menu showing Open details option among other task actions, accessed by right-clicking on a task row or clicking the menu button](../assets/0-6-10-open-task-details.png){ width="200" .center}
 3. Detail panel opens on the right
 4. Edit description, subtasks, links, dependencies
 5. Changes save automatically
