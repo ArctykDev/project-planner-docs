@@ -17,6 +17,8 @@ status: new
 
 Recently, I've been listening to an audiobook called [Atomic Habits](https://atomichabits.com) by James Clear. It is full of interesting information about how habits form, how we can use basic strategies to grow good habits and break bad habits successfully. Throughout the book, James Clear introduces various tools that can help identify and manage habits, including a habit tracker, and a habit contract. The second he mentioned "habit tracker", my brain immediately went to "I could build that!" and "I could totally do this with Obsidian.". 
 
+<!-- more -->
+
 A habit tracker is a way to track all of your daily habits. The habits you track are completely up to you and can include both good or bad habits. A habit tracker can be as simple as crossing out days on a calendar, or using a jar of paperclips, transferring a paperclip from the "full" jar to the "empty" jar each time a habit is completed. For me, I knew I wanted to capture my habits using an app or service I'm already using, making it as convenient as possible. 
 
 So I let the idea sit with me for a day or so and then I decided to go for it, and build a simple habit tracker plugin for Obsidian. I wanted something that was basic yet interactive enough to provide a sense of accomplishment when completing good habits and a little accountability when not following through on a habit. I also wanted it to feel as integrated with Obsidian as possible so that it just works and doesn't get in your way. 
