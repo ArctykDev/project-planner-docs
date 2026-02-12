@@ -48,9 +48,9 @@ A powerful habit tracking plugin for Obsidian that helps you build and maintain 
 
 ---
 
-# How to Install
+## How to Install
 
-## Install Habit Tracker manually
+### Install Habit Tracker manually
 
 1. Download the latest release from the [Habit Tracker GitHub repository](https://github.com/ArctykDev/obsidian-habit-tracker/releases)
 
@@ -73,7 +73,7 @@ A powerful habit tracking plugin for Obsidian that helps you build and maintain 
    - Find "Habit Tracker" in the list
    - Toggle it on
 
-## Install Habit Tracker using Obsidian BRAT community plugin
+### Install Habit Tracker using Obsidian BRAT community plugin
 
 [BRAT (Beta Reviewers Auto-update Tester)](https://github.com/TfTHacker/obsidian42-brat) is a community plugin that allows you to install and test beta plugins directly from GitHub repositories.
 
